@@ -5,10 +5,18 @@ import React from "react";
 import { render } from 'react-dom';
 import { testimonies, stateColors, typeColors } from './aapitestimonydata'
 
+var currentlyHovering = {}
+
 function Bubble(props) {
 	return (
 		<>
-			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="50px" h="50px" rounded="50px" p="10px">
+			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="50px" h="50px" rounded="50px" m="2px" transition="all 0.2s ease"
+						_hover={{
+							cursor: "pointer",
+							transform: "scale(0.80)",
+							borderWidth: "7px",
+							
+						}}>
 			</Box>
 		</>
 	)
