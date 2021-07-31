@@ -1,10 +1,21 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import { Box, Text, Center, Flex, Icon, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, ModalFooter, Button, useDisclosure } from '@chakra-ui/react'
-import React from "react";
+import { Box, Text, Center, Flex, Icon, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, ModalFooter, Button, CheckboxGroup, Checkbox, HStack, useDisclosure, useForceUpdate } from '@chakra-ui/react'
+import { useState } from "react";
 import { render } from 'react-dom';
 import { testimonies, stateColors, typeColors } from './aapitestimonydata'
 import { NextLink } from "next/link"
+
+const possibleStates = Object.keys(stateColors)
+const possibleTypes = Object.keys(typeColors)
+
+let statesBooleans = []
+for (let i = 0; i < possibleStates.length; i++)
+	statesBooleans.push(true)
+
+let typesBooleans = []
+for (let i = 0; i < possibleTypes.length; i++)
+	typesBooleans.push(true)
 
 var currentlyHovering = {}
 
@@ -17,7 +28,7 @@ function Bubble(props) {
 
 	return (
 		<>
-			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="50px" h="50px" rounded="50px" m="2px" transition="all 0.2s ease"
+			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="50px" h="50px" rounded="50px" m="2px" transition="all 0.3s ease"
 						_hover={{
 							cursor: "pointer",
 							transform: "scale(0.80)",
@@ -52,10 +63,10 @@ function Bubble(props) {
 
 export default function BubbleGraph() {
 
-	// the state stuff was just making this confusing so screw it for now
 	var filteredTestimonies = []
-	var activeStates = ["California", "DC", "New York", "Maryland", "Massachusetts", "Maine", "Minnesota", "Illinois", "Texas", "Colorado", "South Carolina", "Arizona", "Wisconsin", "Indiana", "Louisiana", "Michigan", "Oklahoma", "Alaska", "Rhode Island", "Washington", "Kentucky", "Canada", "Virginia", "Florida", "Nevada", "New Jersey", "Georgia", "Pennsylvania", "Oregon", "Iowa", "nan", "District of Columbia"]
-	var activeTypes = ["Verbal Harassment", "Avoidance/Shunning", "Coughed/Spat On", "Workplace Discrimination", "Physical Assault", "Online", "Refusal Of Service", "Vandalism"]
+
+	const [checkedStates, setCheckedStates] = useState(statesBooleans)
+	const [checkedTypes, setCheckedTypes] = useState(typesBooleans)
 
 	function renderBubbles() {
 		filterState()
@@ -78,10 +89,15 @@ export default function BubbleGraph() {
 	}
 
 	function filterState() {
+		filteredTestimonies = []
 		// filter
 		for (let i = 0; i < testimonies.length; i++) {
 			let testimony = testimonies[i];
-			if (activeStates.includes(testimony.State) && activeTypes.includes(testimony.Type))
+			// if (activeStates.includes(testimony.State) && activeTypes.includes(testimony.Type))
+			// 	filteredTestimonies.push(testimony);
+			let stateIndex = possibleStates.indexOf(testimony.State);
+			let typeIndex = possibleTypes.indexOf(testimony.Type)
+			if (checkedStates[stateIndex] && checkedTypes[typeIndex])
 				filteredTestimonies.push(testimony);
 		}
 		// shuffle
@@ -93,11 +109,64 @@ export default function BubbleGraph() {
 		}
 	}
 
+	function adjustAll(value, state) {
+		if (state === 'types') {
+			let temp = checkedTypes.slice();
+			for (let i = 0; i < temp.length; i++)
+				temp[i] = value;
+			setCheckedTypes(temp);
+		} else {
+			let temp = checkedStates.slice();
+			for (let i = 0; i < temp.length; i++)
+				temp[i] = value;
+			setCheckedStates(temp);
+		}
+	}
+
 	return (
 		<>
-			<Center maxW="1000px" maxH="1000px" borderWidth="3px" borderColor="gray" flexWrap="wrap" p="10px">
+			<Center maxW="1000px" borderWidth="3px" borderColor="gray" flexWrap="wrap" p="10px" my={15}>
 				{renderBubbles()}
 			</Center>
+			<Box>
+				<Flex maxW="1100px" maxH="30px" bgColor="white" p="17px" align="center" justify="center" rounded="10px">
+					<Text>Test:</Text>
+				</Flex>
+				<CheckboxGroup>
+					<Flex bgColor="white" maxW="1100px" align="center" justify="center" rounded="10px" m={5} flexWrap="wrap">
+						{possibleTypes.map((type, i) => {
+							return (
+								<>
+									<Checkbox isChecked={checkedTypes[i]} colorScheme="yellow" m={3} onChange={(e) => {
+										let temp = checkedTypes.slice(); 
+										temp[i] = e.target.checked;
+										setCheckedTypes(temp);
+									}} key={i}>{type}</Checkbox>
+								</>
+							);
+						})}
+					</Flex>
+					<Flex bgColor="white" maxW="1100px" align="center" justify="center" rounded="10px" m={5} flexWrap="wrap">
+						{possibleStates.map((state, i) => {
+							return (
+								<>
+									<Checkbox isChecked={checkedStates[i]} colorScheme="yellow" m={3} onChange={(e) => {
+										let temp = checkedStates.slice(); 
+										temp[i] = e.target.checked;
+										setCheckedStates(temp);
+									}} key={i}>{state}</Checkbox>
+								</>
+							);
+						})}
+					</Flex>
+				</CheckboxGroup>
+				<Flex align="center" justify="center">
+					<Button m={3} onClick={(e) => {adjustAll(false, "types")}}>Clear Types</Button>
+					<Button m={3} onClick={(e) => {adjustAll(false, "states")}}>Clear States</Button>
+					<Button m={3} onClick={(e) => {adjustAll(true, "types")}}>Select All Types</Button>
+					<Button m={3} onClick={(e) => {adjustAll(true, "states")}}>Select All States</Button>
+				</Flex>
+			</Box>
 		</>
 	);
 
