@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import { Box, Text, Center, Flex, Icon, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, ModalFooter, Button, CheckboxGroup, Checkbox, HStack, useDisclosure, useForceUpdate } from '@chakra-ui/react'
+import { Box, Text, Center, Flex, Icon, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, ModalFooter, Button, CheckboxGroup, Checkbox, HStack, useDisclosure, Link, Divider, Tooltip } from '@chakra-ui/react'
 import { useState } from "react";
 import { render } from 'react-dom';
 import { testimonies, stateColors, typeColors } from './aapitestimonydata'
-import { NextLink } from "next/link"
+import NextLink from "next/link"
 
 const possibleStates = Object.keys(stateColors)
 const possibleTypes = Object.keys(typeColors)
@@ -28,26 +28,29 @@ function Bubble(props) {
 
 	return (
 		<>
-			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="50px" h="50px" rounded="50px" m="2px" transition="all 0.3s ease"
+		<Tooltip closeDelay={10} label={ "(" + (props.City) + ", " + (props.State) + ") " + (props.Type)}>
+			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="50px" h="50px" rounded="50px" m="3px" transition="all 0.3s ease"
 						_hover={{
 							cursor: "pointer",
-							transform: "scale(0.80)",
+							transform: "scale(0.7)",
 							borderWidth: "7px",
-							
 						}}
 						onClick={onOpen}>
 			</Box>
+		</Tooltip>
+			
 					
 			<Modal isOpen={isOpen} onClose={onClose} isCentered motionPreset="slideInButtom">
 						<ModalOverlay />
-						<ModalContent bgColor="gray" align="center">
-							<ModalBody>
+						<ModalContent bgColor="white" align="center">
+							<ModalBody p="25px">
 								<Box>
-									<Text>State: {props.State}</Text>
-									<Text>City: {props.City}</Text>
-									<Text>Type: {props.Type}</Text>
-									<Text>Report: {props.Report}</Text>
-									<Text>Source: {props.Source}</Text>
+									<Text fontWeight="bold">State: {props.State}</Text>
+									<Text fontWeight="bold">City: {props.City}</Text>
+									<Text fontWeight="bold">Type: {props.Type}</Text>
+									<Divider py={2}/>
+									<Text py={2}>"{props.Report}"</Text>
+									<Text fontSize={10}>Source: <NextLink target="_blank" href={props.Source} isExternal>{props.Source}</NextLink></Text>
 								</Box>
 							</ModalBody>
 							<ModalFooter>
@@ -129,9 +132,6 @@ export default function BubbleGraph() {
 				{renderBubbles()}
 			</Center>
 			<Box>
-				<Flex maxW="1100px" maxH="30px" bgColor="white" p="17px" align="center" justify="center" rounded="10px">
-					<Text>Test:</Text>
-				</Flex>
 				<CheckboxGroup>
 					<Flex bgColor="white" maxW="1100px" align="center" justify="center" rounded="10px" m={5} flexWrap="wrap">
 						{possibleTypes.map((type, i) => {
@@ -160,7 +160,7 @@ export default function BubbleGraph() {
 						})}
 					</Flex>
 				</CheckboxGroup>
-				<Flex align="center" justify="center">
+				<Flex align="center" justify="center" flexWrap="wrap">
 					<Button m={3} onClick={(e) => {adjustAll(false, "types")}}>Clear Types</Button>
 					<Button m={3} onClick={(e) => {adjustAll(false, "states")}}>Clear States</Button>
 					<Button m={3} onClick={(e) => {adjustAll(true, "types")}}>Select All Types</Button>
