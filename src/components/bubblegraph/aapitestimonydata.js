@@ -8,7 +8,7 @@ const testimonies = [
     },
     {
         "Text": "I was walking with a female friend, and a man walked past us and said \"Chinese go back to China.\" He then turned around and walked past us again and repeatedly yelled at us and said \"Go back to China.\" We were very scared and tried to get away from him but he followed us for about three minutes, one block. Once we crossed the street to where more people were then he stopped following us. My friend and I were shaken by the incident.",
-        "State": "DC",
+        "State": "District of Columbia",
         "City": "Annadale",
         "Type": "Verbal Harassment",
         "Source": "https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate-Mental-Health-Report-210527.pdf"
@@ -778,7 +778,7 @@ const testimonies = [
     },
     {
         "Text": "I was walking from my mom's car, wearing a mask and trying to keep my distance from others. A middle-aged lady, not wearing a mask, went to the other side of the sidewalk from me and said, \"Get away from me, Asian lady!”",
-        "State": "Caifornia",
+        "State": "California",
         "City": "Cerritos",
         "Type": "Avoidance/Shunning",
         "Source": "https://stopaapihate.org/wp-content/uploads/2021/04/Stop-AAPI-Hate-Report-Youth-Incidents-200917.pdf"
@@ -836,7 +836,7 @@ const testimonies = [
         "Text": "It was the last day I went to school before the stay at home order was put in place. I went to the bathroom during class and two girls followed me. One of them had orange juice so when I walked into a stall, I got juice thrown into my stall and it got all over me. When they threw it, they yelled, “Coronavirus.”",
         "State": "California",
         "City": "Union City",
-        "Type": "Assault and Harrassment (other)",
+        "Type": "Physical Assault",
         "Source": "https://stopaapihate.org/wp-content/uploads/2021/04/Stop-AAPI-Hate-Report-National-200805.pdf"
     },
     {
@@ -1241,7 +1241,7 @@ const testimonies = [
     {
         "Text": "An Asian store owner was punched in the face in his own Washington, D.C., store, in an attack caught on the store's surveillance video. Chong Hu Lu, the owner of Max Trading, said the assailant grew angry after being told he could not open items in the store and attacked Lu, saying \"F--- you, Chinese people, I hate you.\" Lu was taking to the hospital and recieved 14 stitches.",
         "State": "District of Columbia",
-        "City": "Washington, D.C.",
+        "City": "Washington",
         "Type": "Physical Assault",
         "Source": "https://www.nbcwashington.com/news/asian-business-owner-attacked-in-northeast-dc/2662419/"
     },
@@ -1296,11 +1296,55 @@ const testimonies = [
     },
     {
         "Text": "A 75-year-old Asian woman is recovering from fractures and injuries to her face after she was punched in an unprovoked attack in Queens, according to the NYPD. Pictures released by the woman's family showed the fractures and bruises. She had been shopping for groceries when she was sucker punched by a suspect walking down the street. Her son said she was in the hospital for eight hours after the attack.",
-        "State": " New York",
+        "State": "New York",
         "City": "Queens",
         "Type": "Physical Assault",
         "Source": "https://www.nbcnewyork.com/news/local/75-year-old-asian-woman-suffers-facial-fracture-in-unprovoked-nyc-attack/3078716/"
     }
 ]
 
-export default testimonies;
+const stateColors = {
+    "California": "#FFBF00",
+    "New York": "#FFFF8F",
+    "Maryland": "#F5F5DC",
+    "Massachusetts": "#E49B0F",
+    "Maine": "#FBCEB1",
+    "Minnesota": "	#FCF55F",
+    "Illinois": "#E4D00A",
+    "Texas": "#DFFF00",
+    "Colorado": "#FFFFF0",
+    "South Carolina": "#F8DE7E",
+    "Arizona": "#F0E68C",
+    "Wisconsin": "#FAFA33",
+    "Indiana": "#FBEC5D",
+    "Louisiana": "#F4BB44",
+    "Michigan": "#FFDB58",
+    "Oklahoma": "#FADA5E",
+    "Alaska": "	#FFDEAD",
+    "Rhode Island": "#ECFFDC",
+    "Washington": "#FFFAA0",
+    "Kentucky": "#FFE5B4",
+    "Canada": "	#F4C430",
+    "Virginia": "#F3E5AB",
+    "Florida": "#F5DEB3",
+    "Nevada": "#FDDE6C",
+    "New Jersey": "#FADA5F",
+    "Georgia": "#C4B454",
+    "Pennsylvania": "#FFFE7A",
+    "Oregon": "#FBEEAC",
+    "Iowa": "#EADDCA",
+    "District of Columbia": "#FFAA33",
+}
+
+const typeColors = {
+    "Verbal Harassment": "#7CB9E8",
+    "Avoidance/Shunning": "#002D62",
+    "Coughed/Spat On": "#FFFFFF",
+    "Workplace Discrimination": "#5F9EA0",
+    "Physical Assault": "#808080",
+    "Online": "#1E90FF",
+    "Refusal Of Service": "#2c3968",
+    "Vandalism": "#5A4FCF",
+}
+
+export { testimonies, stateColors, typeColors };
