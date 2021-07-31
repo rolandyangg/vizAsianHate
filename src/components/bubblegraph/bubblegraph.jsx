@@ -29,7 +29,7 @@ function Bubble(props) {
 	return (
 		<>
 		<Tooltip closeDelay={10} label={ "(" + (props.City) + ", " + (props.State) + ") " + (props.Type)}>
-			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="50px" h="50px" rounded="50px" m="3px" transition="all 0.3s ease"
+			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="33px" h="33px" rounded="50px" m="3px" transition="all 0.3s ease"
 						_hover={{
 							cursor: "pointer",
 							transform: "scale(0.7)",
