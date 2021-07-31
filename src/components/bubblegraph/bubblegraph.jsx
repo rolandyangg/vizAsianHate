@@ -1,13 +1,20 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import { Box, Text, Center, Flex, Icon } from '@chakra-ui/react'
+import { Box, Text, Center, Flex, Icon, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, ModalFooter, Button, useDisclosure } from '@chakra-ui/react'
 import React from "react";
 import { render } from 'react-dom';
 import { testimonies, stateColors, typeColors } from './aapitestimonydata'
+import { NextLink } from "next/link"
 
 var currentlyHovering = {}
 
 function Bubble(props) {
+	const {
+		isOpen,
+		onOpen,
+		onClose
+	} = useDisclosure();
+
 	return (
 		<>
 			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="50px" h="50px" rounded="50px" m="2px" transition="all 0.2s ease"
@@ -16,8 +23,29 @@ function Bubble(props) {
 							transform: "scale(0.80)",
 							borderWidth: "7px",
 							
-						}}>
+						}}
+						onClick={onOpen}>
 			</Box>
+					
+			<Modal isOpen={isOpen} onClose={onClose} isCentered motionPreset="slideInButtom">
+						<ModalOverlay />
+						<ModalContent bgColor="gray" align="center">
+							<ModalBody>
+								<Box>
+									<Text>State: {props.State}</Text>
+									<Text>City: {props.City}</Text>
+									<Text>Type: {props.Type}</Text>
+									<Text>Report: {props.Report}</Text>
+									<Text>Source: {props.Source}</Text>
+								</Box>
+							</ModalBody>
+							<ModalFooter>
+								<Button size="sm" onClick={onClose}>
+									Close
+								</Button>
+							</ModalFooter>
+						</ModalContent>
+			</Modal>
 		</>
 	)
 }
@@ -34,7 +62,16 @@ export default function BubbleGraph() {
 		return (
 			filteredTestimonies.map((testimony, i) => {
 				return (
-					<Bubble bgColor={stateColors[testimony.State]} borderColor={typeColors[testimony.Type]} key={i}/>
+					<Bubble 
+						bgColor={stateColors[testimony.State]} 
+						borderColor={typeColors[testimony.Type]} 
+						State={testimony.State}
+						City={testimony.City}
+						Type={testimony.Type}
+						Report={testimony.Text}
+						Source={testimony.Source}
+						key={i}
+					/>
 				);
 			})
 		)
