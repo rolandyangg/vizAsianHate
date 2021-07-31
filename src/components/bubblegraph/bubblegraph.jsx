@@ -1,10 +1,14 @@
+/* eslint-disable no-undef */
+import { Text } from '@chakra-ui/react'
 import React from "react";
+import testimonies from './aapitestimonydata'
 
-
-export default function BubbleGraph() {
-	return <></>;
+function BubbleGraph() {
+	return (
+		<>
+			<Text>{testimonies[0].Text}</Text>
+		</>
+	);
 }
 
-export async function getStaticProps(context) {
-	
-}
+export default BubbleGraph;

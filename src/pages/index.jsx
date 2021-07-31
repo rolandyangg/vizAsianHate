@@ -8,7 +8,7 @@ import BubbleGraph from "../components/bubblegraph/bubblegraph"
 export default function Home() {
   return (
     <Container>
-      <Text>Cheese</Text>
+      <Text>Test</Text>
       <BubbleGraph/>
     </Container>
   )

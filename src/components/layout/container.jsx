@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Container(props) {
     return <>
-        <Center {...props}>
+        <Center as="section" {...props}>
             {props.children}
         </Center>
     </>;
