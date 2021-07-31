@@ -29,7 +29,7 @@ function Bubble(props) {
 	return (
 		<>
 		<Tooltip closeDelay={10} label={ "(" + (props.City) + ", " + (props.State) + ") " + (props.Type)}>
-			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="33px" h="33px" rounded="50px" m="3px" transition="all 0.3s ease"
+			<Box bgColor={props.bgColor} borderWidth="3px" borderColor={props.borderColor} w="35px" h="35px" rounded="50px" m="3px" transition="all 0.3s ease"
 						_hover={{
 							cursor: "pointer",
 							transform: "scale(0.7)",
@@ -96,8 +96,6 @@ export default function BubbleGraph() {
 		// filter
 		for (let i = 0; i < testimonies.length; i++) {
 			let testimony = testimonies[i];
-			// if (activeStates.includes(testimony.State) && activeTypes.includes(testimony.Type))
-			// 	filteredTestimonies.push(testimony);
 			let stateIndex = possibleStates.indexOf(testimony.State);
 			let typeIndex = possibleTypes.indexOf(testimony.Type)
 			if (checkedStates[stateIndex] && checkedTypes[typeIndex])
@@ -128,16 +126,18 @@ export default function BubbleGraph() {
 
 	return (
 		<>
-			<Center maxW="1000px" borderWidth="3px" borderColor="gray" flexWrap="wrap" p="10px" my={15}>
-				{renderBubbles()}
+			<Center h="600px" justify="center" align="center" borderColor="gray" borderWidth="3px">
+				<Center maxW="1100px" flexWrap="wrap" p="10px" position="absolute">
+					{renderBubbles()}
+				</Center>
 			</Center>
 			<Box>
 				<CheckboxGroup>
-					<Flex bgColor="white" maxW="1100px" align="center" justify="center" rounded="10px" m={5} flexWrap="wrap">
+					<Flex bgColor="white" maxW="1100px" align="center" justify="center" rounded="10px" m={5} p={1} flexWrap="wrap">
 						{possibleTypes.map((type, i) => {
 							return (
 								<>
-									<Checkbox isChecked={checkedTypes[i]} colorScheme="yellow" m={3} onChange={(e) => {
+									<Checkbox isChecked={checkedTypes[i]} colorScheme="yellow" m={2} onChange={(e) => {
 										let temp = checkedTypes.slice(); 
 										temp[i] = e.target.checked;
 										setCheckedTypes(temp);
@@ -145,12 +145,14 @@ export default function BubbleGraph() {
 								</>
 							);
 						})}
+						<Button m={2} onClick={(e) => {adjustAll(false, "types")}}>Clear Types</Button>
+						<Button m={2} onClick={(e) => {adjustAll(true, "types")}}>Select All Types</Button>
 					</Flex>
-					<Flex bgColor="white" maxW="1100px" align="center" justify="center" rounded="10px" m={5} flexWrap="wrap">
+					<Flex bgColor="white" maxW="1100px" align="center" justify="center" rounded="10px" m={5} p={1} flexWrap="wrap">
 						{possibleStates.map((state, i) => {
 							return (
 								<>
-									<Checkbox isChecked={checkedStates[i]} colorScheme="yellow" m={3} onChange={(e) => {
+									<Checkbox isChecked={checkedStates[i]} colorScheme="yellow" m={2} onChange={(e) => {
 										let temp = checkedStates.slice(); 
 										temp[i] = e.target.checked;
 										setCheckedStates(temp);
@@ -158,14 +160,10 @@ export default function BubbleGraph() {
 								</>
 							);
 						})}
+						<Button m={2} onClick={(e) => {adjustAll(false, "states")}}>Clear States</Button>
+						<Button m={2} onClick={(e) => {adjustAll(true, "states")}}>Select All States</Button>
 					</Flex>
 				</CheckboxGroup>
-				<Flex align="center" justify="center" flexWrap="wrap">
-					<Button m={3} onClick={(e) => {adjustAll(false, "types")}}>Clear Types</Button>
-					<Button m={3} onClick={(e) => {adjustAll(false, "states")}}>Clear States</Button>
-					<Button m={3} onClick={(e) => {adjustAll(true, "types")}}>Select All Types</Button>
-					<Button m={3} onClick={(e) => {adjustAll(true, "states")}}>Select All States</Button>
-				</Flex>
 			</Box>
 		</>
 	);
