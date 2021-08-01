@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Text } from "@chakra-ui/react";
 //import {Bar, Line} from 'react-chartjs-2';
 import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Line } from 'recharts'
-import crime from "./hate_crime2.js"
+import crime3 from "./hate_crime3.js"
 
 /*const data1 = require(crime);
 console.log(data1);
@@ -41,7 +41,7 @@ export default function MainGraph() {
 	<LineChart
 		width={800}
 		height={400}
-		data={crime}
+		data={crime3}
 		margin={{
 			top: 5, right: 30, left: 20, bottom: 5,
 		}}
@@ -53,7 +53,7 @@ export default function MainGraph() {
 		<Tooltip />
 		<Legend />
 		<Line yAxisId="left" type="monotone" dataKey="Hate Crimes" stroke="#8884d8" activeDot={{ r: 8 }} />
-		<Line yAxisId="right" type="monotone" dataKey="Percent Change From Previous Year" connectNulls ="true" stroke="#82ca9d" activeDot={{ r: 8 }} />
+		<Line yAxisId="right" type="monotone" dataKey="California COVID Cases" stroke="#82ca9d" activeDot={{ r: 8 }} />
 	</LineChart>
 	</Box>
 	</>);
