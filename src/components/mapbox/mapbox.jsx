@@ -3,9 +3,7 @@ import ReactMapboxGl, { Marker } from 'react-mapbox-gl';
 import {
 	Tabs,
 	TabList,
-	TabPanels,
 	Tab,
-	TabPanel,
 	Link,
 	Text,
 	Button,
