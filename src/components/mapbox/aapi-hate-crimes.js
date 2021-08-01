@@ -1880,4 +1880,742 @@ export const aapiHateCrimes = [
 			source: 'https://www.nytimes.com/2006/08/15/nyregion/15hate.html',
 		},
 	},
+	{
+		place_name: 'Las Vegas, Nevada, United States',
+		bbox: [
+			-115.895754886987, 35.9127000269816, -114.88360202314, 36.7409579922042,
+		],
+		text: 'Las Vegas',
+		context: [
+			{
+				id: 'district.13974455518661400',
+				wikidata: 'Q108403',
+				text: 'Clark County',
+			},
+			{
+				id: 'region.10001740274236760',
+				wikidata: 'Q1227',
+				short_code: 'US-NV',
+				text: 'Nevada',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-115.1492, 36.1663],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q23768',
+			place_name: 'Las Vegas, Nevada, United States',
+			text: 'Metro arrested a woman who allegedly hit a 6-year-old Asian American boy on the Las Vegas Strip.',
+			year: 2021,
+			source:
+				'https://www.8newsnow.com/news/local-news/asian-community-demands-justice-following-alleged-hate-crime-on-las-vegas-strip/',
+		},
+		center: [-115.1492, 36.1663],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		geometry: {
+			coordinates: [-115.2796626470692, 36.26546378712551],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Las Vegas, Nevada, United States',
+			text: 'Local Asian Americans experience discrimination, hate crimes; some blame the community for coronavirus',
+			year: 2020,
+			source:
+				'https://www.8newsnow.com/video/local-asian-americans-experience-discrimination-hate-crimes-some-blame-the-community-for-coronavirus/4441742/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-118.30741470947245, 34.02580891058061],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Los Angeles, California, United States',
+			text: 'Someone drove up to me, rolled down their window, shouted “I used to beat up your kind of people when I was in high school!” And drove off laughing maniacally. I was terrified. I was alone, I was just going to pick up dinner, I was scared they were going to double back to physically attack me. I cried hysterically in my car after the incident.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate-Mental-Health-Report-210527.pdf',
+		},
+	},
+	{
+		place_name: 'Annandale, Virginia, United States',
+		bbox: [
+			-77.2661003581784, 38.8105550000224, -77.1570671318461, 38.8619309532995,
+		],
+		text: 'Annandale',
+		context: [
+			{
+				id: 'district.7838875506013360',
+				wikidata: 'Q341915',
+				text: 'Fairfax County',
+			},
+			{
+				id: 'region.7919684583758790',
+				wikidata: 'Q1370',
+				short_code: 'US-VA',
+				text: 'Virginia',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-77.1965, 38.8303],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q1375477',
+			place_name: 'Annandale, Virginia, United States',
+			text: 'I was walking with a female friend, and a man walked past us and said "Chinese go back to China." He then turned around and walked past us again and repeatedly yelled at us and said "Go back to China." We were very scared and tried to get away from him but he followed us for about three minutes, one block. Once we crossed the street to where more people were then he stopped following us. My friend and I were shaken by the incident.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate-Mental-Health-Report-210527.pdf',
+		},
+		center: [-77.1965, 38.8303],
+		relevance: 0.96875,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Concord, California, United States',
+		bbox: [
+			-122.093732829552, 37.9147210102923, -121.901040008177, 38.0591489998003,
+		],
+		text: 'Concord',
+		context: [
+			{
+				id: 'district.6617818507905330',
+				wikidata: 'Q108058',
+				text: 'Contra Costa County',
+			},
+			{
+				id: 'region.9803118085738010',
+				wikidata: 'Q99',
+				short_code: 'US-CA',
+				text: 'California',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-122.0311, 37.978],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q490441',
+			place_name: 'Concord, California, United States',
+			text: '[My] 8th grade daughter [was] being teased & humiliated by schoolmates to run away from “Kung-flu / Coronavirus”. Immediately [my] daughter felt ashamed to be Asian & scared to go back to school [after] this humiliation.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate-Mental-Health-Report-210527.pdf',
+		},
+		center: [-122.0311, 37.978],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Amsterdam, New York, United States',
+		bbox: [
+			-74.3217147362867, 42.8234070041342, -73.9947861581637, 43.0558069965784,
+		],
+		text: 'Amsterdam',
+		context: [
+			{
+				id: 'district.14718720401028120',
+				wikidata: 'Q487572',
+				text: 'Montgomery County',
+			},
+			{
+				id: 'region.17349986251855570',
+				wikidata: 'Q1384',
+				short_code: 'US-NY',
+				text: 'New York',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-74.185, 42.9434],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q478456',
+			place_name: 'Amsterdam, New York, United States',
+			text: 'Three boys circled my friend, spat on her, and called her slurs etc. She was about to burst into tears. She is scared to go to school now.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate-Mental-Health-Report-210527.pdf',
+		},
+		center: [-74.185, 42.9434],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Villa Park, California, United States',
+		bbox: [
+			-117.827161992954, 33.802114017468, -117.793623367149, 33.8319409973633,
+		],
+		text: 'Villa Park',
+		context: [
+			{
+				id: 'district.2458234562353400',
+				wikidata: 'Q5925',
+				text: 'Orange County',
+			},
+			{
+				id: 'region.9803118085738010',
+				wikidata: 'Q99',
+				short_code: 'US-CA',
+				text: 'California',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-117.8206, 33.8148],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q1944021',
+			place_name: 'Villa Park, California, United States',
+			text: 'We have been terrorized by a racist offender who lives next door to us. We feel afraid for our safety, emotionally traumatized, elder abuse by yelling, shouting, videotaping, and spitting at our elderly mother when she is in her own backyard. We are on edge, constantly fear intrusion into our home, cannot sleep well at night, unable to walk outside due to fear for our safety',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate-Mental-Health-Report-210527.pdf',
+		},
+		center: [-117.8206, 33.8148],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Gaithersburg, Maryland, United States',
+		bbox: [-77.3028629783189, 39.073552, -77.0651282880494, 39.2890599306147],
+		text: 'Gaithersburg',
+		context: [
+			{
+				id: 'district.14127387844028120',
+				wikidata: 'Q488659',
+				text: 'Montgomery County',
+			},
+			{
+				id: 'region.10710475061772660',
+				wikidata: 'Q1391',
+				short_code: 'US-MD',
+				text: 'Maryland',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-77.2014, 39.1434],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q752719',
+			place_name: 'Gaithersburg, Maryland, United States',
+			text: "My new coworkers keep asking me whether or not I'm Chinese. After an initial high from being offered a job during the \"China Virus'', I am now feeling anxious and having trouble hiding my severe anxiety. This leaves me in a precarious position. If I fail my probation, who will hire me?",
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate-Mental-Health-Report-210527.pdf',
+		},
+		center: [-77.2014, 39.1434],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Boston, Massachusetts, United States',
+		bbox: [
+			-71.1911559808676, 42.2279251715472, -70.9862240485867, 42.3969789945055,
+		],
+		text: 'Boston',
+		context: [
+			{
+				id: 'district.11510878044935260',
+				wikidata: 'Q54072',
+				text: 'Suffolk County',
+			},
+			{
+				id: 'region.8307399429561540',
+				wikidata: 'Q771',
+				short_code: 'US-MA',
+				text: 'Massachusetts',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-71.0596, 42.3605],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q100',
+			place_name: 'Boston, Massachusetts, United States',
+			text: 'I went to a store a block away from my building. On my way back, at a red light, a man in a car rolled down his window to scream at me, “China did this to us, to Americans, f*** you, f*** China, yeah I’m talking to you, b****’ with slurs and acted as though he was going to get out of his car before he sped off.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate_NAPAWF_Whitepaper.pdf',
+		},
+		center: [-71.0596, 42.3605],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Gardena, California, United States',
+		bbox: [
+			-118.335103933814, 33.8462383941511, -118.264539139734, 33.9172648816318,
+		],
+		text: 'Gardena',
+		context: [
+			{
+				id: 'district.9101022958465270',
+				wikidata: 'Q104994',
+				text: 'Los Angeles County',
+			},
+			{
+				id: 'region.9803118085738010',
+				wikidata: 'Q99',
+				short_code: 'US-CA',
+				text: 'California',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-118.3071, 33.8883],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q846409',
+			place_name: 'Gardena, California, United States',
+			text: 'During my mom’s morning walk, she came across a man walking his dog. Immediately, he started to harass her by yelling and insulting her with the following statements: “Get out of here!” “You don’t belong in this neighborhood!” “You b****!” “You’re ugly!” He proceeded to mock her accent and also by impersonating an elderly person as she was walking away. Moreover, he stated, “The next time I see you, I’m going to run you over with my car!”',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate_NAPAWF_Whitepaper.pdf',
+		},
+		center: [-118.3071, 33.8883],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Brunswick, Maine, United States',
+		bbox: [
+			-70.0878935110166, 43.8224240066671, -69.8570300175428, 43.9756629850669,
+		],
+		text: 'Brunswick',
+		context: [
+			{
+				id: 'district.12365623748940190',
+				wikidata: 'Q497788',
+				text: 'Cumberland County',
+			},
+			{
+				id: 'region.13595469516240120',
+				wikidata: 'Q724',
+				short_code: 'US-ME',
+				text: 'Maine',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-69.9653, 43.9145],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q518466',
+			place_name: 'Brunswick, Maine, United States',
+			text: 'A group of men in a car slowed down next to me when I was walking back to my dorm from the grocery store, then started making racist and sexual remarks. “I like them chi*ky” and “This all happened because of bat-eaters, but I still love you long time!” I had to start running between buildings so they couldn’t follow me.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate_NAPAWF_Whitepaper.pdf',
+		},
+		center: [-69.9653, 43.9145],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Mount Kisco, New York, United States',
+		bbox: [
+			-73.7727759686778, 41.1494946085835, -73.6628629797675, 41.2616549731277,
+		],
+		text: 'Mount Kisco',
+		context: [
+			{
+				id: 'district.16322942980460480',
+				wikidata: 'Q54066',
+				text: 'Westchester County',
+			},
+			{
+				id: 'region.17349986251855570',
+				wikidata: 'Q1384',
+				short_code: 'US-NY',
+				text: 'New York',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-73.7271, 41.2043],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q2412514',
+			place_name: 'Mount Kisco, New York, United States',
+			text: 'I was with my two young children at [store name] to buy strawberries. I opened the container to check for mold when two men shouted that I was spreading COVID, getting everyone sick, called me a f*** b**** and said they should punch me. It scared my children and they said the men kept following us around the store.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate_NAPAWF_Whitepaper.pdf',
+		},
+		center: [-73.7271, 41.2043],
+		relevance: 0.954545,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Dublin, California, United States',
+		bbox: [-122.00127854375, 37.6973720004839, -121.832437000055, 37.749591],
+		text: 'Dublin',
+		context: [
+			{
+				id: 'district.11187960009291250',
+				wikidata: 'Q107146',
+				text: 'Alameda County',
+			},
+			{
+				id: 'region.9803118085738010',
+				wikidata: 'Q99',
+				short_code: 'US-CA',
+				text: 'California',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-121.9358, 37.7022],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q837109',
+			place_name: 'Dublin, California, United States',
+			text: 'I received 30+ comments from some account on Instagram attacking me using hateful, racist, and perverted language. A lot of the comments attacked me for being Asian, calling me “G**k” or likening me and other Asian people in my posts to coronavirus, e.g. “corona girl”, “achooooo”, which one of you can cough the furthest distance”, etc. a lot of the comments were also sexual, e.g. “flat boobs girl”, “white fetish assley”, etc.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate_NAPAWF_Whitepaper.pdf',
+		},
+		center: [-121.9358, 37.7022],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Blaine, Minnesota, United States',
+		bbox: [
+			-93.2668893389155, 45.1242226955032, -93.1423413230326, 45.2115192000864,
+		],
+		text: 'Blaine',
+		context: [
+			{
+				id: 'district.3106250163475380',
+				wikidata: 'Q110495',
+				text: 'Anoka County',
+			},
+			{
+				id: 'region.14740633650676580',
+				wikidata: 'Q1527',
+				short_code: 'US-MN',
+				text: 'Minnesota',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-93.2349, 45.1608],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q881140',
+			place_name: 'Blaine, Minnesota, United States',
+			text: 'Former friends have continuously harassed me by adding me to online chats, then calling me racist names like f**king chink b***h, and telling me and my family to go back to Hong Kong although I was born in the US. My father is Hmong and I am half Hmong and half white.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate_NAPAWF_Whitepaper.pdf',
+		},
+		center: [-93.2349, 45.1608],
+		relevance: 0.958333,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Dallas, Texas, United States',
+		bbox: [
+			-97.0739842998664, 32.6181511664824, -96.5555140285758, 33.0164939859046,
+		],
+		text: 'Dallas',
+		context: [
+			{
+				id: 'district.5525234542701420',
+				wikidata: 'Q111168',
+				text: 'Dallas County',
+			},
+			{
+				id: 'region.12968715825342410',
+				wikidata: 'Q1439',
+				short_code: 'US-TX',
+				text: 'Texas',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-96.7969, 32.7763],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q16557',
+			place_name: 'Dallas, Texas, United States',
+			text: 'I was at an auto repair shop and the guy at the desk really didn’t seem to want to help me. He kept making excuses for why they couldn’t fix my car: telling me it would be too expensive for me to fix my tail light, telling me that it could take a really long time to order and get my taillight in stock. But as I was leaving, I heard one of the mechanics say to the guy at the desk, “Oh, I’m glad you got rid of her. I’m not working on a coronavirus car.”',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate_NAPAWF_Whitepaper.pdf',
+		},
+		center: [-96.7969, 32.7763],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Grand Junction, Colorado, United States',
+		bbox: [
+			-108.741435806003, 38.8900692814333, -108.412183002541, 39.2964289677878,
+		],
+		text: 'Grand Junction',
+		context: [
+			{
+				id: 'district.13763266694634970',
+				wikidata: 'Q153251',
+				text: 'Mesa County',
+			},
+			{
+				id: 'region.10002699958017490',
+				wikidata: 'Q1261',
+				short_code: 'US-CO',
+				text: 'Colorado',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-108.5507, 39.064],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q989903',
+			place_name: 'Grand Junction, Colorado, United States',
+			text: 'I was at work and a customer told me that Asians are awful and should all die. That the only thing good about us is our food.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate_NAPAWF_Whitepaper.pdf',
+		},
+		center: [-108.5507, 39.064],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Taylors, South Carolina, United States',
+		bbox: [
+			-82.3722239964969, 34.8820360053786, -82.2692450061613, 35.104898996018,
+		],
+		text: 'Taylors',
+		context: [
+			{
+				id: 'district.11136799486490800',
+				wikidata: 'Q502273',
+				text: 'Greenville County',
+			},
+			{
+				id: 'region.7673459501964580',
+				wikidata: 'Q1456',
+				short_code: 'US-SC',
+				text: 'South Carolina',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-82.2962, 34.9204],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q1669602',
+			place_name: 'Taylors, South Carolina, United States',
+			text: 'I was at work and a customer said he would sue the place if he got sick. He proceeded to point at me and say “everything was my fault.”',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate_NAPAWF_Whitepaper.pdf',
+		},
+		center: [-82.2962, 34.9204],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Gilbert, Arizona, United States',
+		bbox: [
+			-111.84231499776, 33.2099523545727, -111.685779478653, 33.3829749967661,
+		],
+		text: 'Gilbert',
+		context: [
+			{
+				id: 'district.7498009875254960',
+				wikidata: 'Q58691',
+				text: 'Maricopa County',
+			},
+			{
+				id: 'region.9522999891724140',
+				wikidata: 'Q816',
+				short_code: 'US-AZ',
+				text: 'Arizona',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-111.789, 33.3528],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q51684',
+			place_name: 'Gilbert, Arizona, United States',
+			text: 'While shopping at a local grocery, [I walked] past a gentleman who said, "Chinese Motherf***er." I continued shopping, then ran into him again in another aisle, when he said the same slur. I told him I am not from there and never been to China, and he said, "Doesn\'t matter — you are all the same and you are a virus.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate-Report-National-210506.pdf',
+		},
+		center: [-111.789, 33.3528],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Riverside, California, United States',
+		bbox: [
+			-117.523867991296, 33.8237230050868, -117.278800184883, 34.0343109999583,
+		],
+		text: 'Riverside',
+		context: [
+			{
+				id: 'district.11123605772201310',
+				wikidata: 'Q108111',
+				text: 'Riverside County',
+			},
+			{
+				id: 'region.9803118085738010',
+				wikidata: 'Q99',
+				short_code: 'US-CA',
+				text: 'California',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-117.3962, 33.9534],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q49243',
+			place_name: 'Riverside, California, United States',
+			text: 'I was at the park with a friend and our young children. A large man was jogging by, lunged off the path toward me and yelled “F****** ch***!” in my face before jogging away. We were with our children and too scared to confront him, but he appeared unashamed as he jogged by again.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/05/Stop-AAPI-Hate-Report-National-210506.pdf',
+		},
+		center: [-117.3962, 33.9534],
+		relevance: 1,
+		type: 'Feature',
+	},
 ];
