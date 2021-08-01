@@ -36,7 +36,7 @@ const Mapbox = () => {
 
 	return (
 		<Tabs onChange={(index) => setYear(indexToYear[index])}>
-			<TabList height='5vh'>
+			<TabList height="5vh">
 				<Tab>All Years</Tab>
 				<Tab>2021</Tab>
 				<Tab>2020</Tab>
@@ -48,6 +48,64 @@ const Mapbox = () => {
 				<Tab>2006</Tab>
 			</TabList>
 			<Map
+				// onStyleLoad={(map, loadEvent) => {
+				// 	map.on('load', function () {
+				// 		// Insert the layer beneath any symbol layer.
+				// 		var layers = map.getStyle().layers;
+				// 		var labelLayerId;
+				// 		for (var i = 0; i < layers.length; i++) {
+				// 			if (
+				// 				layers[i].type === 'symbol' &&
+				// 				layers[i].layout['text-field']
+				// 			) {
+				// 				labelLayerId = layers[i].id;
+				// 				break;
+				// 			}
+				// 		}
+
+				// 		// The 'building' layer in the Mapbox Streets
+				// 		// vector tileset contains building height data
+				// 		// from OpenStreetMap.
+				// 		map.addLayer(
+				// 			{
+				// 				id: 'add-3d-buildings',
+				// 				source: 'composite',
+				// 				'source-layer': 'building',
+				// 				filter: ['==', 'extrude', 'true'],
+				// 				type: 'fill-extrusion',
+				// 				minzoom: 15,
+				// 				paint: {
+				// 					'fill-extrusion-color': '#aaa',
+
+				// 					// Use an 'interpolate' expression to
+				// 					// add a smooth transition effect to
+				// 					// the buildings as the user zooms in.
+				// 					'fill-extrusion-height': [
+				// 						'interpolate',
+				// 						['linear'],
+				// 						['zoom'],
+				// 						15,
+				// 						0,
+				// 						15.05,
+				// 						['get', 'height'],
+				// 					],
+				// 					'fill-extrusion-base': [
+				// 						'interpolate',
+				// 						['linear'],
+				// 						['zoom'],
+				// 						15,
+				// 						0,
+				// 						15.05,
+				// 						['get', 'min_height'],
+				// 					],
+				// 					'fill-extrusion-opacity': 0.6,
+				// 				},
+				// 			},
+
+				// 			labelLayerId
+				// 		);
+				// 	});
+				// }}
 				style="mapbox://styles/mapbox/dark-v10"
 				containerStyle={{
 					height: '90vh',
@@ -55,7 +113,10 @@ const Mapbox = () => {
 				}}
 				center={[-98.5795, 39.8283]}
 				zoom={[4.2]}
-				maxBounds={[[-155.704594, 7.182507], [-30.050213, 53.788833]]}
+				maxBounds={[
+					[-155.704594, 7.182507],
+					[-30.050213, 53.788833],
+				]}
 			>
 				{aapiHateCrimes
 					.filter((feature) => feature.properties.year === year || year === 0)
