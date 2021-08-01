@@ -6,7 +6,7 @@ import {
 } from "@chakra-ui/react"
 import React from "react";
 import Container from "../components/layout/container"
-import { BubbleGraph, PoliticsGraph, MainGraph, Mapbox, LiveTwitter, Timeline } from "../components/index";
+import { BubbleGraph, PoliticsGraph, MainGraph, Mapbox, LiveTwitter, Timeline, BarGraph } from "../components/index";
 
 export default function Home() {
  return (
@@ -18,6 +18,7 @@ export default function Home() {
           <PoliticsGraph/>
           <LiveTwitter/>
           <MainGraph/>
+          <BarGraph/>
           <Timeline/>
         </Box>
         <Box align="center" justify="center">

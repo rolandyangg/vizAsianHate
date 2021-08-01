@@ -19,8 +19,9 @@ export default function PoliticsGraph() {
 	return (
 		<Box>
 			<BarChart
-			width={1000}
-			height={300}
+			layout="vertical"
+			width={800}
+			height={700}
 			data={PoliticsTweetData}
 			margin={{
 				top: 20,
@@ -30,14 +31,13 @@ export default function PoliticsGraph() {
 			}}
 			>
 			<CartesianGrid stroke="#ccc" strokeDasharray="3 3" />
-			<XAxis dataKey="Category" />
-			<YAxis dataKey="# of Tweets"/>
+			<XAxis dataKey="# of Tweets" type="number"/>
+			<YAxis dataKey="Category" type="category" scale="band"/>
 			<Tooltip />
 			<Legend />
 			<Bar dataKey="Democrats" stackId="a" fill="#2c3968" />
 			<Bar dataKey="Republicans" stackId="a" fill="#FFBF00" />
 			</BarChart>
-			<Text>Test</Text>
 		</Box>
     );
 }
