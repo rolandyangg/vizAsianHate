@@ -1,7 +1,7 @@
 import React from "react";
 import { VStack, Heading, Text } from "@chakra-ui/react";
 //import {Bar, Line} from 'react-chartjs-2';
-import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Line, ReferenceLine, Headers } from 'recharts'
+import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Line, ReferenceLine } from 'recharts'
 import crime3 from "./hate_crime3.js"
 /*const data1 = require(crime);
 console.log(data1);
