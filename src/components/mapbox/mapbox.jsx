@@ -49,7 +49,6 @@ const Mapbox = () => {
 				<Tab>2015</Tab>
 				<Tab>2006</Tab>
 			</TabList>
-			<TabPanels></TabPanels>
 			<Map
 				style="mapbox://styles/mapbox/dark-v10"
 				containerStyle={{
@@ -58,6 +57,7 @@ const Mapbox = () => {
 				}}
 				center={[-98.5795, 39.8283]}
 				zoom={[4.2]}
+				maxBounds={[[-155.704594, 7.182507], [-30.050213, 53.788833]]}
 			>
 				{aapiHateCrimes
 					.filter((feature) => feature.properties.year === year || year === 0)
