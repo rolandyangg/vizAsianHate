@@ -5,6 +5,7 @@ import {
 import React from "react";
 import Container from "../components/layout/container"
 import { BubbleGraph, PoliticsGraph } from "../components/index";
+import MainGraph from "@/components/regulargraphs/maingraphs";
 
 export default function Home() {
  return (
@@ -14,6 +15,9 @@ export default function Home() {
         <BubbleGraph/>
         {/* <Mapbox /> */}
         <PoliticsGraph/>
+      </Box>
+      <Box justify="center" align="center">
+        <MainGraph/>
       </Box>
     </Container>
   )
