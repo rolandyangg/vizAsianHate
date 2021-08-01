@@ -27,7 +27,7 @@ export default function BarGraph() {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="City" angle={25}
         dx={50}
-        dy={20}
+        dy={28}
         minTickGap={-200}
         axisLine={false}/>
           <YAxis />

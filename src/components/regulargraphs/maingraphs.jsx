@@ -31,7 +31,6 @@ export default function MainGraph() {
 		<YAxis yAxisId="left" />
 		<YAxis yAxisId="right" orientation="right" />
 		<Tooltip />
-		<Headers text="hello"/>
 		<Legend verticalAlign="top" height={36}/>
 		<ReferenceLine yAxisId="left" x="March 2020" stroke="red" label={'Lockdown Mandate Issued'} />
 		<Line yAxisId="left" type="monotone" dataKey="Anti-Asian Hate Crimes" name="California Asian Hate Crimes" stroke="#FFAA33" activeDot={{ r: 8 }} />
