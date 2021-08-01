@@ -5,9 +5,9 @@ import { FormControl, FormLabel, Select, Box, Flex, Text } from "@chakra-ui/reac
 import { useEffect, useState } from "react";
 import tweets from "./asiantwitter"
 import {
-	PieChart, Pie, Cell, Tooltip
+	PieChart, Pie, Cell, Tooltip, Legend
 } from 'recharts';
-import ReactWordcloud from "react-wordcloud";
+import { TagCloud } from 'react-tagcloud'
 
 const keywords = ['Stop Asian Hate', 'Chinese virus', 'China', 'Chinese', 'Asian American', 'AAPI', 'Wuhan', 'Virus', 'wuhan virus', 'Stop AAPI Hate', 'Asian Hate', 'ChinaLiedPeopleDied', 'Racism is a virus'];
 
@@ -44,8 +44,8 @@ function makeFrequencyObject(activeWord) {
 	let res = []
 	for (let i = 0; i < Math.min(filter.length, 25); i++) {
 		res.push({
-			text: filter[i][0],
-			value: filter[i][1]
+			value: filter[i][0],
+			count: filter[i][1]
 		})
 	}
 
@@ -58,7 +58,7 @@ for (let i = 0; i < keywords.length; i++)
 
 export default function LiveTwitter() {
 
-	const [activeKey, setActiveKey] = useState(keywords[4]) // use the first word to start
+	const [activeKey, setActiveKey] = useState(keywords[0]) // use the first word to start
 	
 	function organizeSentiments() {
 		let counts = [0, 0, 0] // Positive, Neutral, Negative
@@ -81,6 +81,7 @@ export default function LiveTwitter() {
 	function renderPieChart() {
 		const data = organizeSentiments();
 		const RADIAN = Math.PI / 180;
+		const COLORS = ["#FFBB28", "#808080", "#E49B0F"];
 		const renderCustomizedLabel = ({
 			cx,
 			cy,
@@ -110,6 +111,7 @@ export default function LiveTwitter() {
 		return (
 			<>
 				<PieChart width={400} height={400}>
+					<Legend layout="horizontal" verticalAlign="top" align="center" />
 					<Pie
 						data={data}
 						cx="50%"
@@ -122,7 +124,7 @@ export default function LiveTwitter() {
 						legendType="line"
 					>
 						{data.map((entry, index) => (
-							<Cell key={index} fill={'#FFBF00'}/>
+							<Cell key={index} fill={COLORS[index % COLORS.length]}/>
 						))}
 					</Pie>
 					<Tooltip content="Tool"/>
@@ -136,6 +138,7 @@ export default function LiveTwitter() {
 			<Flex align="center" justify="center" flexWrap="wrap">
 				<Flex align="center" justify="center">
 					{/* <ReactWordcloud size={[500, 300]} words={frequencies[keywords.indexOf(activeKey)]}/> */}
+					<TagCloud minSize={20} maxSize={45} tags={frequencies[keywords.indexOf(activeKey)]}/>
 					{renderPieChart()}
 				</Flex>
 					<Select onChange={(e) => setActiveKey(e.currentTarget.value)}>
