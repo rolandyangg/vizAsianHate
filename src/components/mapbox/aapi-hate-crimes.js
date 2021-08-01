@@ -1138,4 +1138,746 @@ export const aapiHateCrimes = [
 			type: 'Point',
 		},
 	},
+	{
+		geometry: {
+			coordinates: [-73.95494242807631, 40.77345858225925],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'A 59-year-old Asian man passed by a group of teens when one teen kicked him in the back, causing him to fall. The suspect allegedly said Chinese people have COVID-19. The same boy attacked the same man again on March 10 in a similar incident. The same teen attacked the victim against on March 7, spitting in his face and saying Chinese people have the virus.',
+			year: 2020,
+			source:
+				'https://www.nbcnewyork.com/news/local/teen-arrested-for-anti-asian-attack-man-sought-for-harassment-nypd/2326725/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-122.31081415960537, 47.58093104841734],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Seattle, Washington, United States',
+			text: "An Asian couple were victims to the same suspect who had terrorized several other Asian park guests at Seattle's Golden Gardens Park. This time, the man had spat on the male victim's face as the couple was walking to their car and told them \"It's all your fault.\"",
+			year: 2020,
+			source:
+				'https://www.kiro7.com/news/local/police-can-you-id-this-man-who-attacked-an-asian-couple-said-its-all-your-fault/F2UPMNQ2JBG3PJBILCDWPI4U7M/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-122.43752463145641, 37.772688391250014],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'San Francisco, California, United States',
+			text: "A 71-year-old woman blacked out and suffered facial injuried after she was attacked by 34-year-old Michael Turner in San Francisco's Tenderloin district. It was the second assault against an older Asian woman ascribed to Turner, who was charged with elder abuse, assault and battery for both attacks.",
+			year: 2020,
+			source:
+				'https://www.sanfranciscopolice.org/news/san-francisco-police-arrest-suspect-aggravated-assaults',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.98568364933432, 40.765310248162194],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'An international student from Korea was assaulted while entering a building on West 34th Street. The suspect asked her, "Where\'s your (expletive) mask?" She then proceeded to grab the victim by the hair and punch her in the face. The woman allegedly also told the victim, "You\'ve got coronavirus, you Asian (expletive).',
+			year: 2020,
+			source:
+				'https://www.nbcnews.com/news/us-news/asian-woman-attacked-new-york-city-possible-coronavirus-bias-crime-n1155716',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-122.48222043082345, 37.71767942333132],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'San Francisco, California, United States',
+			text: 'An elderly Asian man was physically assaulted while collecting recyclables near a housing project. The incident was filmed and shared widely on social media. In the video, one person can be heard saying, "I hate Asians." Dwayne Grayson was arrested on suspicion of robbery, elder abuse and committing a hate crime, as well as a probation violation for an earlier robbery.',
+			year: 2020,
+			source:
+				'https://www.nbcbayarea.com/news/local/san-francisco/victim-identified-in-viral-video-filmed-in-san-franciscos-bayview/2242887/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.94892331145705, 40.80442282934021],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'A man on the subway argued with an Asian passenger and then sprayed Febreze air freshner at the passenger. The MTA tweeted out video of the incident, calling the incident "racism" and asking people to stay home to stop the spread of the novel coronavirus.',
+			year: 2020,
+			source:
+				'https://www.nbcnewyork.com/news/video-shows-man-spray-asian-subway-passenger-with-air-freshener/2316162/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-75.17109785655141, 40.03301252367717],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Philadelphia, Pennsylvania, United States',
+			text: 'A pregnant mom walking with her 12-year-old daughter in Philadelphia\'s Chinatown was sprayed with water, swore at and attacked by a panhandler. "I asked her, \'What are you gonna do, I\'m pregnant. Are you going to hurt me?" Jing Chen told 6 ABC Action News. "She punched me on my face!" Chen said the woman swore at her during the attack, calling her a "Chinese (expletive)."',
+			year: 2020,
+			source:
+				'A pregnant mom walking with her 12-year-old daughter in Philadelphia\'s Chinatown was sprayed with water, swore at and attacked by a panhandler. "I asked her, \'What are you gonna do, I\'m pregnant. Are you going to hurt me?" Jing Chen told 6 ABC Action News. "She punched me on my face!" Chen said the woman swore at her during the attack, calling her a "Chinese (expletive)."',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.98372954528125, 40.73911628598236],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'A 40-year-old Asian man was hit several times in the face and choked while getting out of his car in Manhattan. Cops said the attacker called the victim by anti-Asian slurs during the attack.',
+			year: 2020,
+			source:
+				'https://nypost.com/2020/10/09/police-hunting-for-suspect-in-anti-asian-attack-in-nyc/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-74.0047486946639, 40.75328889588789],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'An Asian woman was attacked in a New York subway station for wearing a mask. The assaliant had called his victim a "diseased b----," hit the woman on the head, then as he was being chased by his victim, flung an umbrella at her and attacked her in footage caught by a witness',
+			year: 2020,
+			source:
+				'https://www.nbcnews.com/news/us-news/coronavirus-hate-attack-woman-face-mask-allegedly-assaulted-man-who-n1130671?cid=sm_npd_nn_tw_ma',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.95812205023476, 40.66353760133248],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Brooklyn, New York, United States',
+			text: 'An Asian woman in Brooklyn was taking out her trash when a man outside her apartment building doused her with a substance that gave her second-degree chemical burns on her face, hands and upper body.',
+			year: 2020,
+			source:
+				'https://www.buzzfeednews.com/article/clarissajanlim/asian-woman-chemical-burns-brooklyn-new-york-attack',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.97309653374005, 40.79508831998862],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'A 30-year-old Asian man was riding the subway in midtown Manhattan, when a stranger blamed him for coronavirus and tried to drag him off the train. The victim was able to record a video of the suspect fiddling with the surgical mask he was wearing',
+			year: 2020,
+			source:
+				'https://www.nydailynews.com/coronavirus/ny-asian-man-harrased-blamed-coronavirus-subway-20200503-wbmjgm2rh5b25otloc74xfiwou-story.html',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.96608467201284, 40.80951454106304],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'A woman walking in New York\'s Chelsea neigborhood was punched and told to "go back to your own country, go back to China," according to police. Fred Sousa, 50, was chased down by bystanders and held until police arrived.',
+			year: 2020,
+			source:
+				'https://pix11.com/news/local-news/manhattan/man-makes-anti-asian-comments-punches-woman-on-manhattan-street-police/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.94415013019928, 40.83210024714981],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'Nicholas Theodore, 19, yelled at a 26-year-old Asian man "You f---ing Chinese, spreading the coronavirus. You people got the virus." He then spit in the victim\'s face and mimicked having a gun, jamming his hand in his coat pocket and pointing his finger.',
+			year: 2020,
+			source:
+				'https://www.nydailynews.com/coronavirus/ny-coronavirus-hate-crime-brooklyn-subway-spit-20200325-h4w4nzb74fbadpx6li4f7xdoc4-story.html',
+		},
+	},
+	{
+		place_name: 'Midland, Texas, United States',
+		bbox: [
+			-102.287529999991, 31.6513710223813, -101.775891123812, 32.1180989964159,
+		],
+		text: 'Midland',
+		context: [
+			{
+				id: 'district.16333138268693220',
+				wikidata: 'Q483937',
+				text: 'Midland County',
+			},
+			{
+				id: 'region.12968715825342410',
+				wikidata: 'Q1439',
+				short_code: 'US-TX',
+				text: 'Texas',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-102.0746, 31.9969],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q128321',
+			place_name: 'Midland, Texas, United States',
+			text: 'Bawi Cung and his two young sons, 3 and 6, were on a family shopping trip when they were stabbed at a Sam\'s Club in Midland, Texas, by a 19-year-old attacker who said he did it because they were "Chinese and infecting people with the coronavirus." Cung\'s 3-year-old son was stabbed in the back, while his 6-year-old brother was slashed from his right eye to a few inches past his right ear. The Cungs were from Myanmar. The suspect, Jose Gomez, was arrested and jailed on three counts of attempted murder.',
+			year: 2020,
+			source:
+				'https://www.nbcwashington.com/news/national-international/victims-of-anti-asian-attacks-reflect-a-year-into-pandemic/2591757/',
+		},
+		center: [-102.0746, 31.9969],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		geometry: {
+			coordinates: [-73.98325552973846, 40.75444980201834],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: "A 32-year-old Asian woman was riding the subway at the West 4th Street station when three men and three women started arguing with her because she didn't have a face covering, according to police. Then they started making comments about her race and punched the victim multiple times in the face, before taking off, police said.",
+			year: 2020,
+			source:
+				'https://www.nbcnewyork.com/news/local/unmasked-woman-beaten-in-subway-bias-attack-nypd/2798851/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.9754512702735, 40.64303835014667],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Brooklyn, New York, United States',
+			text: "An 89-year-old woman was slapped in the face by two men after she left her home in Brooklyn in an unprovoked attack that took a turn for the worst when they tried to light her on fire. The woman, whom ABC identified as Cantonese, said she did not know the men, and that she did not speak up after the attack because she didn't want her family to worry.",
+			year: 2020,
+			source:
+				'https://abc7ny.com/woman-set-on-fire-elderly-attack-89-year-old-attacked-bensonhurst-crime/6333749/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-122.4103814500163, 37.79475797305136],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'San Francisco, California, United States',
+			text: "A 78-year-old woman was attacked in San Francisco's Tenderloin district, after she was attacked by 34-year-old Michael Turner. Turner broke the woman's hip during the assault.",
+			year: 2020,
+			source:
+				'https://www.sanfranciscopolice.org/news/san-francisco-police-arrest-suspect-aggravated-assaults',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.93702338756903, 40.82470705120994],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'A 23-year-old student from a midtown language school was punched by another woman from a nearby beauty school. The assailant allegedly said "Where\'s your corona mask, you Asian -----," during the attack.',
+			year: 2020,
+			source:
+				'https://www.nbcnewyork.com/news/local/hate-crime-task-force-investigates-two-possible-coronavirus-related-attacks-in-nyc/2323142/',
+		},
+	},
+	{
+		place_name: 'Edison, New Jersey, United States',
+		bbox: [
+			-74.4401442831622, 40.4713021791018, -74.3160720268353, 40.6057350365499,
+		],
+		text: 'Edison',
+		context: [
+			{
+				id: 'district.3740759804892290',
+				wikidata: 'Q496862',
+				text: 'Middlesex County',
+			},
+			{
+				id: 'region.8524001885700330',
+				wikidata: 'Q1408',
+				short_code: 'US-NJ',
+				text: 'New Jersey',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-74.4121, 40.5187],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q746801',
+			place_name: 'Edison, New Jersey, United States',
+			text: 'A juvenile girl from Edison, New Jersey, was charged with bias intimidation among other charges after she yelled racial slurs at a 55-year-old woman and then punching her, according to police. The girl had punched the woman in the back of the head during the assault.',
+			year: 2020,
+			source:
+				'https://www.nj.com/coronavirus/2020/04/girl-charged-with-racially-assaulting-asian-woman-over-coronavirus.html?utm_content=nj_twitter_njdotcom&utm_source=twitter&utm_campaign=njdotcom_sf&utm_medium=social',
+		},
+		center: [-74.4121, 40.5187],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		geometry: {
+			coordinates: [-73.81343513809917, 40.77695140223045],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Queens, New York, United States',
+			text: 'Raoul Ramos, 44, harassed and pushed a 47-year-old Asian man who was walking with his 10-year-old son in the Forest Hills neighborhood. Ramos approached the pair and started screaming, "Where the [expletive] is your mask?" He also referred to them as "You f-----g Chinese.”',
+			year: 2020,
+			source:
+				'https://nypost.com/2020/03/14/asian-man-son-harassed-in-potential-queens-hate-crime/',
+		},
+	},
+	{
+		place_name: 'Pasadena, California, United States',
+		bbox: [-118.33217160448, 34.051258, -117.981748, 34.2039739670555],
+		text: 'Pasadena',
+		context: [
+			{
+				id: 'district.9101022958465270',
+				wikidata: 'Q104994',
+				text: 'Los Angeles County',
+			},
+			{
+				id: 'region.9803118085738010',
+				wikidata: 'Q99',
+				short_code: 'US-CA',
+				text: 'California',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-118.1445, 34.1476],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q485176',
+			place_name: 'Pasadena, California, United States',
+			text: 'Maurice Cornelius Spears, a 36-year-old man, threw a Monster Enerty drink at several Asian American victims as they walked on the street and yelled racial slurrs at the victims',
+			year: 2020,
+			source:
+				'https://www.pasadenanow.com/main/local-man-arrested-for-hate-crime-against-asian-americans/',
+		},
+		center: [-118.1445, 34.1476],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		geometry: {
+			coordinates: [-122.25244881716291, 37.81418176181893],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Oakland, California, United States',
+			text: "A woman walking in Oakland's Jack London Square was assaulted in broad daylight by two tweens, ages 12 and 14, when she was punched and robbed of her wallet and phone. The young attackers were later arrested with a third accomplice for a second mugging, and charged with robbery and battery among other crimes.",
+			year: 2020,
+			source:
+				'https://www.nbcbayarea.com/news/local/they-punched-me-oakland-woman-says-she-was-mugged-by-2-youths/2430699/',
+		},
+	},
+	{
+		place_name: 'Bronx, New York, United States',
+		bbox: [-73.9334079229381, 40.785743, -73.7651278892899, 40.917577],
+		text: 'Bronx',
+		context: [
+			{
+				id: 'place.2618194975964500',
+				wikidata: 'Q60',
+				text: 'New York',
+			},
+			{
+				id: 'district.9881100667835940',
+				wikidata: 'Q855974',
+				text: 'Bronx County',
+			},
+			{
+				id: 'region.17349986251855570',
+				wikidata: 'Q1384',
+				short_code: 'US-NY',
+				text: 'New York',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-73.8662, 40.8501],
+		},
+		place_type: ['locality'],
+		properties: {
+			wikidata: 'Q18426',
+			place_name: 'Bronx, New York, United States',
+			text: 'Three teenage girls and another woman attacked a 51-year-old woman on a bus in the Bronx borough of New York. Police said the four perpetrators made anti-Asian statements before attacking the woman in the head with an umbrella.',
+			year: 2020,
+			source:
+				'https://www.nbcnewyork.com/news/local/woman-gets-stitches-after-anti-asian-attack-on-mta-bus-nypd/2360513/',
+		},
+		center: [-73.8662, 40.8501],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		geometry: {
+			coordinates: [-73.97353251919314, 40.65405624818354],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Brooklyn, New York, United States',
+			text: 'Oswald Jones, 60, targeted a 26-year-old Asian woman, allegedly yelling "Go back to China" and "You are dirty, get your temperature checked," before attempting to punch her and steal her cellphone.',
+			year: 2020,
+			source:
+				'https://www.nydailynews.com/coronavirus/ny-coronavirus-cellphone-robbery-hate-crime-brooklyn-subway-20200322-ufznc24nybcencdtja2ycbsx2i-story.html',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.9944335625428, 40.719533918352255],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'A 34-year-old Asian woman was walking on the street, when Lynn Ferguson walked up to her and spat on her face after blaming her for the spread of the coronavirus.',
+			year: 2020,
+			source:
+				'https://nypost.com/2020/03/17/asian-woman-assaulted-in-manhattan-blamed-for-coronavirus-cops/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.81756436595344, 40.74392611200125],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Quee',
+			text: 'A 23-year-old Bayside man was the victim of a racist rant at a 7-Eleven, and shoved twice once his attacker realized he was being recorded. Sunmin Kwon, of Bayside, New York, recorded cellphone footage of the man pushing Kwon to the ground and calling him a "g---."',
+			year: 2020,
+			source:
+				'https://www.nbcnewyork.com/news/local/nyc-man-called-racial-slur-told-asians-dont-belong-in-racist-attack-caught-on-video/2472697/',
+		},
+	},
+	{
+		place_name: 'Montgomery, New Jersey, United States',
+		bbox: [
+			-74.7520125024605, 40.3751667838314, -74.5949122473369, 40.4716299874056,
+		],
+		text: 'Montgomery',
+		context: [
+			{
+				id: 'district.9962732021837830',
+				wikidata: 'Q502414',
+				text: 'Somerset County',
+			},
+			{
+				id: 'region.8524001885700330',
+				wikidata: 'Q1408',
+				short_code: 'US-NJ',
+				text: 'New Jersey',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-74.65, 40.4],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q367289',
+			place_name: 'Montgomery, New Jersey, United States',
+			text: 'A 29-year-old man was charged with bias intimidation for being motivated by anti-Asian bias after he was accused of chasing an Asian woman and two small children with a fake rifle and trying to steal her cellphone.',
+			year: 2020,
+			source:
+				'https://www.nj.com/somerset/2020/12/man-sentenced-in-anti-asian-attack-of-woman-2-small-children-state-says.html',
+		},
+		center: [-74.65, 40.4],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		geometry: {
+			coordinates: [-73.95109948349989, 40.78770830002679],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'An Asian couple on Broadway in New York City\'s Flatiron District was the victims of a physical bias attack, according to police. A man was seen in video hitting the 29-year-old man with his bicycle and attempting to hit him with a backpack before leaving. Police said he told the couple "You are Chinese! God hates China. You die first."',
+			year: 2020,
+			source:
+				'https://www.nydailynews.com/new-york/nyc-crime/ny-asian-couple-coronavirus-slurs-manhattan-attack-20200903-oesihlyznbhpdgexmaec25zbvi-story.html',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-118.28638964478978, 34.06173615701354],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Los Angeles, California, United States',
+			text: 'A young 16-year-old boy was assaulted in a case of anti-Asian discrimination, according to AAPI community leaders and Los Angeles County public officials in a press conference. The teenager was allegedly attacked and sent to the hospital from school over accusations of having the coronavirus because of his Asian heritage. At the time there were eight cases of coronavirus in California.',
+			year: 2020,
+			source:
+				'https://www.wrcbtv.com/story/41732570/asian-american-teen-in-los-angeles-allegedly-assaulted-over-coronavirus-fears',
+		},
+	},
+	{
+		place_name: 'Fresno, California, United States',
+		bbox: [
+			-120.055363771095, 36.4893182819724, -119.610075023249, 36.9486509239865,
+		],
+		text: 'Fresno',
+		context: [
+			{
+				id: 'district.7931792750564040',
+				wikidata: 'Q271915',
+				text: 'Fresno County',
+			},
+			{
+				id: 'region.9803118085738010',
+				wikidata: 'Q99',
+				short_code: 'US-CA',
+				text: 'California',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-119.8155, 36.6714],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q43301',
+			place_name: 'Fresno, California, United States',
+			text: 'Ten men were shot, four fatally, during a backyard gathering in Fresno, California. All of the victims belonged to the Hmong community, and the attack happened ahead of Hmong New Year. At least two suspects, who reportedly had semi-automatic handguns, of the shooting remain at large.',
+			year: 2019,
+			source:
+				'https://www.nbcbayarea.com/news/local/fresno-california-backyard-shooting-targeted-police/2151574/',
+		},
+		center: [-119.8155, 36.6714],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		geometry: {
+			coordinates: [-73.9912321581764, 40.6328222742344],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Brooklyn, New York, United States',
+			text: 'The owner, chef and employee of a Brooklyn buffet restaurant died after a 34-year-old man went on a rampage with a hammer in a deadly attack against all three. The attacker was allegedly inspired to forgo Latino workers in the restaurant and attack only Asian men after watching Chinese movies where women were allegedly mistreated.',
+			year: 2019,
+			source:
+				'https://www.nbcnewyork.com/news/local/third-victim-in-nyc-restaurant-hammer-rampage-dies/30282/',
+		},
+	},
+	{
+		place_name: 'Olathe, Kansas, United States',
+		bbox: [
+			-95.0191504968771, 38.7673247967491, -94.7140460394048, 38.9568019605013,
+		],
+		text: 'Olathe',
+		context: [
+			{
+				id: 'district.6387999466076750',
+				wikidata: 'Q374979',
+				text: 'Johnson County',
+			},
+			{
+				id: 'region.10336703176034420',
+				wikidata: 'Q1558',
+				short_code: 'US-KS',
+				text: 'Kansas',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-94.8161, 38.8844],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q593022',
+			place_name: 'Olathe, Kansas, United States',
+			text: 'A 32-year-old aviation systems engineer was shot and killed, with his friend and a bystander wounded, after a Kansas man mistook the engineer and his friend for Iranians, confronted them, then shot at them. Adam Purinton had confronted Srinivas Kuchibhotla, 32, and his friend Alok Madasani at a bar, calling both "Iranians" and a slur against people of Middle Eastern descent, then driving home, getting a gun, and returning to the bar to shoot at the two men. Kuchibhotla was killed. Madasani and Ian Gillot, who had chased after Purinton, was shot and wounded. Both Kuchibhotla and Madasani were from India.',
+			year: 2018,
+			source:
+				'https://www.nbcnews.com/news/asian-america/kansas-man-sentenced-life-prison-hate-crime-shooting-n898361',
+		},
+		center: [-94.8161, 38.8844],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Bailey, Colorado, United States',
+		bbox: [
+			-105.861663609018, 39.2032758323159, -105.372552043969, 39.5681989997059,
+		],
+		text: 'Bailey',
+		context: [
+			{
+				id: 'district.3832761285948650',
+				wikidata: 'Q312742',
+				text: 'Park County',
+			},
+			{
+				id: 'region.10002699958017490',
+				wikidata: 'Q1261',
+				short_code: 'US-CO',
+				text: 'Colorado',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-105.4717, 39.4065],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q2879858',
+			place_name: 'Bailey, Colorado, United States',
+			text: 'The FBI has reopened an investigation into the 2017 death of a young Asian American teenager in Denver on May 2021 as a hate crime. Maggie Long, 17, was found dead inside her family\'s home on December 2017. Park County Sheriff Tom McGraw said, at the time, that she was "purposely set on fire and burned alive" during a possible altercation between the teenager and three attackers.',
+			year: 2017,
+			source:
+				'https://www.nbcnews.com/news/us-news/asian-american-teen-s-2017-death-being-investigated-fbi-hate-n1267994',
+		},
+		center: [-105.4717, 39.4065],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		geometry: {
+			coordinates: [-118.26174977205173, 34.04235996489173],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Los Angeles, California, United States',
+			text: 'A woman known as the "neighborhood grandmother" in Los Angeles\' Koreatown was pushed to the ground in an unprovoked attack that left her sprawled on the pavement with a bloodied face and scrapes across her shoulders and arms. Surveillance video shows the grandmother shoved headfirst into the pavement by a woman from behind. Local business owners said she was well known in the neighborhood for greeting neighbors and workers during her walks.',
+			year: 2017,
+			source:
+				'https://www.nbclosangeles.com/news/grandmother-attacked-in-koreatown/26340/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.86959531451735, 40.86259265198771],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Bronx, New York, United States',
+			text: 'A 43-year-old man walking his niece to school was ambushed, punched in the head and kicked by two men while wearing a shalwar kameez in the Bronx. Police said the men had shouted "ISIS! ISIS!" referencing the Islamic State terrorist group during the beating.',
+			year: 2016,
+			source:
+				'https://abc7ny.com/news/asian-woman-on-subway-with-parents-attacked-in-possible-bias-crime/1448388/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.94929811604189, 40.826286753643416],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'New York, New York, United States',
+			text: 'At least four women of Asian descent were injured in a string of attacks in New York City in a span of a week in 2015. In almost all cases, the women were hit in the face by a bag containing a hard object by the man, who had later died by suicide. The man, 25, had written about the attacks in an online screed against Asian women and had previously been arrested 10 times for a list of crimes before his death.',
+			year: 2015,
+			source:
+				'https://www.nbcnewyork.com/news/local/asian-women-attack-suspect-police-source-identify-manhattan-tyrell-shaw/2005754/',
+		},
+	},
+	{
+		geometry: {
+			coordinates: [-73.77484208272352, 40.7355353582324],
+			type: 'Point',
+		},
+		type: 'Feature',
+		properties: {
+			place_name: 'Queens, New York, United States',
+			text: 'Four Chinese New Yorkers were victims of a brutal beating by two white men over racial tensions stoked by new, incoming Asian residents in formerly white neighborhoods in Queens, New York. Two of the victims, Reynold Liang and John C. Lu, were beaten with a steering wheel lock by two young men of the same ages. Kevin Brown, 19, and Paul Heavey, 20, were arrested and charged with assault and hate crimes.',
+			year: 2006,
+			source: 'https://www.nytimes.com/2006/08/15/nyregion/15hate.html',
+		},
+	},
 ];
