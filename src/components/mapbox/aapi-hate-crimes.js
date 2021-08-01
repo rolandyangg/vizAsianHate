@@ -3427,4 +3427,340 @@ export const aapiHateCrimes = [
 		relevance: 1,
 		type: 'Feature',
 	},
+	{
+		place_name: 'Issaquah, Washington, United States',
+		bbox: [
+			-122.13650896013, 47.4158010008259, -121.88290900712, 47.5877783644083,
+		],
+		text: 'Issaquah',
+		context: [
+			{
+				id: 'district.9122689011421610',
+				wikidata: 'Q108861',
+				text: 'King County',
+			},
+			{
+				id: 'region.9713796497246050',
+				wikidata: 'Q1223',
+				short_code: 'US-WA',
+				text: 'Washington',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-122.0433, 47.5349],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q40251',
+			place_name: 'Issaquah, Washington, United States',
+			text: "My friend's Korean American sister went to [retail store]. A lady looked at her and covered her mouth before running away.",
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/04/Stop-AAPI-Hate-Report-National-200805.pdf',
+		},
+		center: [-122.0433, 47.5349],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Queen Creek, Arizona, United States',
+		bbox: [
+			-111.841074134957, 33.0605240136288, -111.464918007194, 33.2884619933917,
+		],
+		text: 'Queen Creek',
+		context: [
+			{
+				id: 'district.7498009875254960',
+				wikidata: 'Q58691',
+				text: 'Maricopa County',
+			},
+			{
+				id: 'region.9522999891724140',
+				wikidata: 'Q816',
+				short_code: 'US-AZ',
+				text: 'Arizona',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-111.6342, 33.2484],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q985299',
+			place_name: 'Queen Creek, Arizona, United States',
+			text: 'When coronavirus first hit Arizona, many white athletes would wear masks in the halls, and before lunch, the science halls are majorly empty. So, as I was walking through them, I was walking past those athletes with masks. Despite an empty hall with just me, they hugged the walls and exaggerated their intent to avoid me.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/04/Stop-AAPI-Hate-Report-National-200805.pdf',
+		},
+		center: [-111.6342, 33.2484],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Timonium, Maryland, United States',
+		bbox: [-76.64674, 39.4285049990742, -76.571191, 39.466286999074],
+		text: 'Timonium',
+		context: [
+			{
+				id: 'place.6181994773055810',
+				wikidata: 'Q754456',
+				text: 'Lutherville Timonium',
+			},
+			{
+				id: 'district.11702416628339210',
+				wikidata: 'Q488668',
+				text: 'Baltimore County',
+			},
+			{
+				id: 'region.10710475061772660',
+				wikidata: 'Q1391',
+				short_code: 'US-MD',
+				text: 'Maryland',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-76.6187, 39.4368],
+		},
+		place_type: ['locality'],
+		properties: {
+			wikidata: 'Q7806933',
+			place_name: 'Timonium, Maryland, United States',
+			text: 'My husband was approached by two women and t. one woman got in his face and yelled at him to "get the f**k out of America."',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/04/Stop-AAPI-Hate-Report-National-200805.pdf',
+		},
+		center: [-76.6187, 39.4368],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Austin, Texas, United States',
+		bbox: [
+			-98.0375379944296, 30.0679421285106, -97.5415641434733, 30.5217759500416,
+		],
+		text: 'Austin',
+		context: [
+			{
+				id: 'district.14251652747735210',
+				wikidata: 'Q110426',
+				text: 'Travis County',
+			},
+			{
+				id: 'region.12968715825342410',
+				wikidata: 'Q1439',
+				short_code: 'US-TX',
+				text: 'Texas',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-97.7437, 30.2711],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q16559',
+			place_name: 'Austin, Texas, United States',
+			text: 'While waiting in line to enter a [a warehouse retail] in Austin, TX, I heard a random person behind me shout at me “Get out of line and go back to your own country! We don’t want your chink germs!” Rather than defend me, others in line either turned away or chuckled.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/04/Stop-AAPI-Hate-Report-Texas-200723.pdf',
+		},
+		center: [-97.7437, 30.2711],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Fort Worth, Texas, United States',
+		bbox: [
+			-97.599329995861, 32.5552967020189, -97.0337923899247, 33.0471669933211,
+		],
+		text: 'Fort Worth',
+		context: [
+			{
+				id: 'district.8287042856205950',
+				wikidata: 'Q110412',
+				text: 'Tarrant County',
+			},
+			{
+				id: 'region.12968715825342410',
+				wikidata: 'Q1439',
+				short_code: 'US-TX',
+				text: 'Texas',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-97.3327, 32.7532],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q16558',
+			place_name: 'Fort Worth, Texas, United States',
+			text: 'Next door neighbor yelled “North Korean Coronavirus f**ker!” repeatedly before attempting to run me over with his Jeep. He was arrested for aggravated assault with a deadly weapon. His wife came on to my property after his arrest and threaten me with firearms.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/04/Stop-AAPI-Hate-Report-Texas-200723.pdf',
+		},
+		center: [-97.3327, 32.7532],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'San Antonio, Texas, United States',
+		bbox: [
+			-98.8864119153972, 29.111114117382, -98.255613106383, 29.7490019763837,
+		],
+		text: 'San Antonio',
+		context: [
+			{
+				id: 'district.2345475148943360',
+				wikidata: 'Q16861',
+				text: 'Bexar County',
+			},
+			{
+				id: 'region.12968715825342410',
+				wikidata: 'Q1439',
+				short_code: 'US-TX',
+				text: 'Texas',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-98.4951, 29.4246],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q975',
+			place_name: 'San Antonio, Texas, United States',
+			text: 'I walked into a classroom (I am an education assistant professor and was observing one my students, who is a PK-12 teacher), and students started saying, “Coronavirus!” to me',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/04/Stop-AAPI-Hate-Report-Texas-200723.pdf',
+		},
+		center: [-98.4951, 29.4246],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Lubbock, Texas, United States',
+		bbox: [
+			-102.193840356343, 33.3416410600871, -101.613439116491, 33.795339048184,
+		],
+		text: 'Lubbock',
+		context: [
+			{
+				id: 'district.14265320037218940',
+				wikidata: 'Q111790',
+				text: 'Lubbock County',
+			},
+			{
+				id: 'region.12968715825342410',
+				wikidata: 'Q1439',
+				short_code: 'US-TX',
+				text: 'Texas',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-101.8552, 33.5779],
+		},
+		place_type: ['place'],
+		properties: {
+			wikidata: 'Q49273',
+			place_name: 'Lubbock, Texas, United States',
+			text: 'Student in our medical school class is posting some disturbing memes blaming Chinese people and stereotyping them for COVID. As someone entering the medical field, this is extremely disturbing, and this student should know better. One day he will be in charge of someone’s healthcare plan and life. Imagine if he takes his bigotry one step further while he is treating any minority.',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/04/Stop-AAPI-Hate-Report-Texas-200723.pdf',
+		},
+		center: [-101.8552, 33.5779],
+		relevance: 1,
+		type: 'Feature',
+	},
+	{
+		place_name: 'Verdugo City, California, United States',
+		bbox: [-118.23872160448, 34.21130839552, -118.238498, 34.21147160448],
+		text: 'Verdugo City',
+		context: [
+			{
+				id: 'district.9101022958465270',
+				wikidata: 'Q104994',
+				text: 'Los Angeles County',
+			},
+			{
+				id: 'region.9803118085738010',
+				wikidata: 'Q99',
+				short_code: 'US-CA',
+				text: 'California',
+			},
+			{
+				id: 'country.19678805456372290',
+				wikidata: 'Q30',
+				short_code: 'us',
+				text: 'United States',
+			},
+		],
+		geometry: {
+			type: 'Point',
+			coordinates: [-118.23861, 34.211391],
+		},
+		place_type: ['place'],
+		properties: {
+			place_name: 'Verdugo City, California, United States',
+			text: 'These two White ladies were moving towards me, but as they passed by me, said, "Go back to China with your dirty diseases."',
+			year: 2021,
+			source:
+				'https://stopaapihate.org/wp-content/uploads/2021/04/Stop-AAPI-Hate-Report-California-200630.pdf',
+		},
+		center: [-118.23861, 34.211391],
+		relevance: 1,
+		type: 'Feature',
+	},
 ];
