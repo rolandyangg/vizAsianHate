@@ -1,4 +1,3 @@
-import AdditionGraph from "./bubblegraph/additiongraph"
 import BubbleGraph from "./bubblegraph/bubblegraph"
 import MainGraph from "./regulargraphs/maingraphs"
 import PoliticsGraph from "./twitter/politicsgraph"
@@ -8,4 +7,4 @@ import Mapbox from "./mapbox/mapbox"
 import Timeline from "./timeline/timeline"
 import BarGraph from "./regulargraphs/bargraph"
 
-export { AdditionGraph, BubbleGraph, MainGraph, PoliticsGraph, LiveTwitter, Hero, Mapbox, Timeline, BarGraph }
+export { BubbleGraph, MainGraph, PoliticsGraph, LiveTwitter, Hero, Mapbox, Timeline, BarGraph }
