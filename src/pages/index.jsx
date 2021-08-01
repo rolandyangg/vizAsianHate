@@ -13,16 +13,16 @@ export default function Home() {
     <Container py={20} bgColor="black" align="center" justify="center">
       <Flex justify="center" flexWrap="wrap">
         <Box justify="center" align="center" maxW="1280px">
-          {/* <Text>Bubble Graph</Text>
+          <Text>Bubble Graph</Text>
           <BubbleGraph/>
           <PoliticsGraph/>
           <LiveTwitter/>
-          <MainGraph/> */}
-          <Timeline/>
+          <MainGraph/>
+          {/* <Timeline/> */}
         </Box>
-        {/* <Box align="center" justify="center">
+        <Box align="center" justify="center">
           <Mapbox/>
-        </Box> */}
+        </Box>
       </Flex>
     </Container>
   )
