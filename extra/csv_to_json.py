@@ -1,8 +1,8 @@
 import json
 import pandas as pd
 
-file = './hate_crime1.csv'
-json_name = 'hate_crime1.json'
+file = './antiasian - Sheet1.csv'
+json_name = 'antiasian.json'
 
 # read csv
 df = pd.read_csv(file)

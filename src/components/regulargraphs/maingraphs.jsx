@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 //import {Bar, Line} from 'react-chartjs-2';
-import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Line } from 'recharts'
+import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Line, ReferenceLine } from 'recharts'
 import crime3 from "./hate_crime3.js"
 
 /*const data1 = require(crime);
@@ -20,15 +20,20 @@ export default function MainGraph() {
 		height={400}
 		data={crime3}
 		margin={{
-			top: 5, right: 30, left: 20, bottom: 5,
+			top: 5, right: 30, left: 20, bottom: 50,
 		}}
 	>
 		<CartesianGrid strokeDasharray="3 3" />
-		<XAxis dataKey="Month" interval="preserveStart"/>
+		<XAxis dataKey="Month" angle={25}
+        dx={30}
+        dy={20}
+        minTickGap={-200}
+        axisLine={true}/>
 		<YAxis yAxisId="left" />
 		<YAxis yAxisId="right" orientation="right" />
 		<Tooltip />
 		<Legend />
+		{/* <ReferenceLine  x="August 2020" stroke="yellow" label="Lockdown Mandate Issued" /> */}
 		<Line yAxisId="left" type="monotone" dataKey="Hate Crimes" stroke="#8884d8" activeDot={{ r: 8 }} />
 		<Line yAxisId="right" type="monotone" dataKey="California COVID Cases" stroke="#82ca9d" activeDot={{ r: 8 }} />
 	</LineChart>
