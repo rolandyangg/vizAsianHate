@@ -13,7 +13,7 @@ export default function Timeline() {
                     theme={{
                         primary:"red",
                         secondary:"yellow",
-                        cardBgColor:"white",
+                        cardBgColor:"gray",
                         cardForeColor:"black",
                         titleColor:"black"
                     }}
