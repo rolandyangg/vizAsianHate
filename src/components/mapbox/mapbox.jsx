@@ -32,23 +32,25 @@ const Mapbox = () => {
 	const [place, setPlace] = useState('');
 	const [text, setText] = useState('');
 	const [source, setSource] = useState('');
+	const [year, setYear] = useState(0);
+
+	const indexToYear = [0, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2006];
 
 	return (
-		<Tabs>
+		<Tabs onChange={(index) => setYear(indexToYear[index])}>
 			<TabList>
-				<Tab index={2021}>2021</Tab>
-				<Tab index={2020}>2020</Tab>
-				<Tab index={2019}>2019</Tab>
-				<Tab index={2018}>2018</Tab>
-				<Tab index={2017}>2017</Tab>
-				<Tab index={2016}>2016</Tab>
-				<Tab index={2015}>2015</Tab>
-				<Tab index={2006}>2006</Tab>
-				<Tab index={0}>All Years</Tab>
+				<Tab>All Years</Tab>
+				<Tab>2021</Tab>
+				<Tab>2020</Tab>
+				<Tab>2019</Tab>
+				<Tab>2018</Tab>
+				<Tab>2017</Tab>
+				<Tab>2016</Tab>
+				<Tab>2015</Tab>
+				<Tab>2006</Tab>
 			</TabList>
-			<TabPanels>
-				<TabPanel>
-				<Map
+			<TabPanels></TabPanels>
+			<Map
 				style="mapbox://styles/mapbox/dark-v10"
 				containerStyle={{
 					height: '100vh',
@@ -58,7 +60,7 @@ const Mapbox = () => {
 				zoom={[4.2]}
 			>
 				{aapiHateCrimes
-					.filter((feature) => feature.properties.year === 2021)
+					.filter((feature) => feature.properties.year === year || year === 0)
 					.map((feature, i) => {
 						return (
 							<Marker
@@ -83,8 +85,6 @@ const Mapbox = () => {
 						);
 					})}
 			</Map>
-				</TabPanel>
-			</TabPanels>
 			<Modal isOpen={isOpen} onClose={onClose}>
 				<ModalOverlay />
 				<ModalContent>
