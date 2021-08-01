@@ -50,8 +50,8 @@ const Mapbox = () => {
 			<Map
 				style="mapbox://styles/mapbox/dark-v10"
 				containerStyle={{
-					height: '95vh',
-					width: '100vw',
+					height: '90vh',
+					width: '80vw',
 				}}
 				center={[-98.5795, 39.8283]}
 				zoom={[4.2]}

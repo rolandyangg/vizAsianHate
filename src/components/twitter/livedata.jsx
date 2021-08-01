@@ -135,7 +135,7 @@ export default function LiveTwitter() {
 		<>
 			<Flex align="center" justify="center" flexWrap="wrap">
 				<Flex align="center" justify="center">
-					<ReactWordcloud size={[500, 300]} words={frequencies[keywords.indexOf(activeKey)]}/>
+					{/* <ReactWordcloud size={[500, 300]} words={frequencies[keywords.indexOf(activeKey)]}/> */}
 					{renderPieChart()}
 				</Flex>
 					<Select onChange={(e) => setActiveKey(e.currentTarget.value)}>
