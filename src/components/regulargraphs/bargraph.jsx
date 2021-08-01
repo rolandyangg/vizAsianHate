@@ -12,7 +12,6 @@ import anti from './antiasian_bar'
 
 export default function BarGraph() {
 	return (<>
-    <Text>hello</Text>
     <Box>
     <BarChart
           width={800}
