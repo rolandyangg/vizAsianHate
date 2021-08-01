@@ -38,7 +38,7 @@ const Mapbox = () => {
 
 	return (
 		<Tabs onChange={(index) => setYear(indexToYear[index])}>
-			<TabList>
+			<TabList height='5vh'>
 				<Tab>All Years</Tab>
 				<Tab>2021</Tab>
 				<Tab>2020</Tab>
@@ -53,7 +53,7 @@ const Mapbox = () => {
 			<Map
 				style="mapbox://styles/mapbox/dark-v10"
 				containerStyle={{
-					height: '100vh',
+					height: '95vh',
 					width: '100vw',
 				}}
 				center={[-98.5795, 39.8283]}
