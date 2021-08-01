@@ -36,7 +36,7 @@ const data = [
 	},
 ];
 export default function MainGraph() {
-	return <>(
+	return (<>
 	<Box>
 	<LineChart
 		width={800}
@@ -47,7 +47,7 @@ export default function MainGraph() {
 		}}
 	>
 		<CartesianGrid strokeDasharray="3 3" />
-		<XAxis dataKey="Month" offset="75" />
+		<XAxis dataKey="Month" interval="preserveStart"/>
 		<YAxis yAxisId="left" />
 		<YAxis yAxisId="right" orientation="right" />
 		<Tooltip />
@@ -56,7 +56,7 @@ export default function MainGraph() {
 		<Line yAxisId="right" type="monotone" dataKey="Percent Change From Previous Year" connectNulls ="true" stroke="#82ca9d" activeDot={{ r: 8 }} />
 	</LineChart>
 	</Box>
-	)</>;
+	</>);
 }
 /*							  
  <LineChart width={730} height={250} data={data}

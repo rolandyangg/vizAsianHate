@@ -4,8 +4,7 @@ import {
 } from "@chakra-ui/react"
 import React from "react";
 import Container from "../components/layout/container"
-import { BubbleGraph, PoliticsGraph } from "../components/index";
-import MainGraph from "@/components/regulargraphs/maingraphs";
+import { BubbleGraph, PoliticsGraph, MainGraph } from "../components/index";
 
 export default function Home() {
  return (
@@ -15,8 +14,7 @@ export default function Home() {
         <BubbleGraph/>
         {/* <Mapbox /> */}
         <PoliticsGraph/>
-      </Box>
-      <Box justify="center" align="center">
+        {/* <LiveTwitter/> */}
         <MainGraph/>
       </Box>
     </Container>
