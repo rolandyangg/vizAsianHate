@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-undef */
-import { FormControl, FormLabel, Select, Box, Flex, Text } from "@chakra-ui/react"
+import { FormControl, FormLabel, Select, Box, Flex, Text, VStack } from "@chakra-ui/react"
 import { useEffect, useState } from "react";
 import tweets from "./asiantwitter"
 import {
@@ -118,7 +118,7 @@ export default function LiveTwitter() {
 						cy="50%"
 						labelLine={false}
 						label={renderCustomizedLabel}
-						outerRadius={100}
+						outerRadius={130}
 						fill="#8884d8"
 						dataKey="value"
 						legendType="line"
@@ -138,9 +138,16 @@ export default function LiveTwitter() {
 			<Flex align="center" justify="center" flexWrap="wrap">
 				<Flex align="center" justify="center">
 					{/* <ReactWordcloud size={[500, 300]} words={frequencies[keywords.indexOf(activeKey)]}/> */}
-					<TagCloud minSize={20} maxSize={45} tags={frequencies[keywords.indexOf(activeKey)]}/>
-					{renderPieChart()}
+					<VStack>
+						<TagCloud minSize={20} maxSize={45} tags={frequencies[keywords.indexOf(activeKey)]}/>
+						<Text>Word/Tagcloud of the most recent tweets for the given query, the larger the word the more it was used</Text>
+					</VStack>
+					<VStack>
+						{renderPieChart()}
+						<Text>VADER Sentiment Analysis of Live Tweets</Text>
+					</VStack>
 				</Flex>
+				<VStack my={5}>
 					<Select fontSize={20} color="gray" onChange={(e) => setActiveKey(e.currentTarget.value)} maxW="600px">
 						{keywords.map((word, i) => {
 							return (<>
@@ -148,6 +155,8 @@ export default function LiveTwitter() {
 							</>)
 						})}
 					</Select>
+					<Text as="i">Choose a search query to view live Twitter data visualizations</Text>
+				</VStack>
 			</Flex>
 		</>
 	);
