@@ -35,8 +35,8 @@ export default function PoliticsGraph() {
 			<YAxis dataKey="Category" type="category" scale="band"/>
 			<Tooltip />
 			<Legend />
-			<Bar dataKey="Democrats" stackId="a" fill="#2c3968" />
-			<Bar dataKey="Republicans" stackId="a" fill="#FFBF00" />
+			<Bar dataKey="Democrats" stackId="a" fill="#E49B0F" />
+			<Bar dataKey="Republicans" stackId="a" fill="#E4D00A" />
 			</BarChart>
 		</Box>
     );

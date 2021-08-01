@@ -10,6 +10,13 @@ export default function Timeline() {
                 <Chrono items={timelineElements}
                     slideShow 
                     mode="VERTICAL_ALTERNATING"
+                    theme={{
+                        primary:"red",
+                        secondary:"yellow",
+                        cardBgColor:"white",
+                        cardForeColor:"black",
+                        titleColor:"black"
+                    }}
                 />
             </Flex>
         </>
