@@ -1,5 +1,5 @@
-import { useState, useCallback } from 'react';
-import ReactMapboxGl, { Marker, Layer, Feature } from 'react-mapbox-gl';
+import { useState } from 'react';
+import ReactMapboxGl, { Marker } from 'react-mapbox-gl';
 import {
 	Link,
 	Text,
