@@ -126,11 +126,6 @@ export default function BubbleGraph() {
 
 	return (
 		<>
-			<Center h="600px" justify="center" align="center" borderColor="gray" borderWidth="3px">
-				<Center maxW="1100px" flexWrap="wrap" p="10px" position="absolute">
-					{renderBubbles()}
-				</Center>
-			</Center>
 			<Box>
 				<CheckboxGroup>
 					<Flex bgColor="white" maxW="1100px" align="center" justify="center" rounded="10px" m={5} p={1} flexWrap="wrap">
@@ -165,6 +160,11 @@ export default function BubbleGraph() {
 					</Flex>
 				</CheckboxGroup>
 			</Box>
+			<Center h="600px" justify="center" align="center" borderColor="gray" borderWidth="3px">
+				<Center maxW="1100px" flexWrap="wrap" p="10px" position="absolute">
+					{renderBubbles()}
+				</Center>
+			</Center>
 		</>
 	);
 
