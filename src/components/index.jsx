@@ -6,5 +6,6 @@ import LiveTwitter from "./twitter/livedata"
 import Hero from "./hero"
 import Mapbox from "./mapbox/mapbox"
 import Timeline from "./timeline/timeline"
+import BarGraph from "./regulargraphs/bargraph"
 
-export { AdditionGraph, BubbleGraph, MainGraph, PoliticsGraph, LiveTwitter, Hero, Mapbox, Timeline }
+export { AdditionGraph, BubbleGraph, MainGraph, PoliticsGraph, LiveTwitter, Hero, Mapbox, Timeline, BarGraph }
