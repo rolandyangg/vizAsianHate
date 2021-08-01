@@ -82,9 +82,9 @@ export default function BarGraph() {
         axisLine={false}/>
           <YAxis />
           <Tooltip />
-          <Legend padding="123"/>
-          <Bar dataKey="2019 Crime" fill="#8884d8" />
-          <Bar dataKey="2020 Crime" fill="#82ca9d" />
+          <Legend verticalAlign="top" height={36}/>
+          <Bar dataKey="2019 Anti-Asian Hate Crimes" fill="#8884d8" />
+          <Bar dataKey="2020 Anti-Asian Hate Crimes" fill="#82ca9d" />
         </BarChart>
         {/* <BarChart
           width={700}

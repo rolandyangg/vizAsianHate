@@ -32,9 +32,9 @@ export default function MainGraph() {
 		<YAxis yAxisId="left" />
 		<YAxis yAxisId="right" orientation="right" />
 		<Tooltip />
-		<Legend />
-		{/* <ReferenceLine  x="August 2020" stroke="yellow" label="Lockdown Mandate Issued" /> */}
-		<Line yAxisId="left" type="monotone" dataKey="Hate Crimes" stroke="#8884d8" activeDot={{ r: 8 }} />
+		<Legend verticalAlign="top" height={36}/>
+		<ReferenceLine yAxisId="left" x="March 2020" stroke="yellow" label="Lockdown Mandate Issued" />
+		<Line yAxisId="left" type="monotone" dataKey="Anti-Asian Hate Crimes" stroke="#8884d8" activeDot={{ r: 8 }} />
 		<Line yAxisId="right" type="monotone" dataKey="California COVID Cases" stroke="#82ca9d" activeDot={{ r: 8 }} />
 	</LineChart>
 	</Box>

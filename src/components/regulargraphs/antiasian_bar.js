@@ -1,56 +1,56 @@
 const anti = [
     {
         "City": "New York City, NY",
-        "2019 Crime": 3,
-        "2020 Crime": 28,
+        "2019 Anti-Asian Hate Crimes": 3,
+        "2020 Anti-Asian Hate Crimes": 28,
         "ROC": 833
     },
     {
         "City": "Los Angeles, CA",
-        "2019 Crime": 7,
-        "2020 Crime": 15,
+        "2019 Anti-Asian Hate Crimes": 7,
+        "2020 Anti-Asian Hate Crimes": 15,
         "ROC": 114
     },
     {
         "City": "Philadelphia, PA",
-        "2019 Crime": 2,
-        "2020 Crime": 6,
+        "2019 Anti-Asian Hate Crimes": 2,
+        "2020 Anti-Asian Hate Crimes": 6,
         "ROC": 200
     },
     {
         "City": "San Jose, CA",
-        "2019 Crime": 4,
-        "2020 Crime": 10,
+        "2019 Anti-Asian Hate Crimes": 4,
+        "2020 Anti-Asian Hate Crimes": 10,
         "ROC": 150
     },
     {
         "City": "Sacramento, CA",
-        "2019 Crime": 1,
-        "2020 Crime": 8,
+        "2019 Anti-Asian Hate Crimes": 1,
+        "2020 Anti-Asian Hate Crimes": 8,
         "ROC": 700
     },
     {
         "City": "Seattle, WA",
-        "2019 Crime": 9,
-        "2020 Crime": 14,
+        "2019 Anti-Asian Hate Crimes": 9,
+        "2020 Anti-Asian Hate Crimes": 14,
         "ROC": 56
     },
     {
         "City": "San Francisco, CA",
-        "2019 Crime": 6,
-        "2020 Crime": 9,
+        "2019 Anti-Asian Hate Crimes": 6,
+        "2020 Anti-Asian Hate Crimes": 9,
         "ROC": 50
     },
     {
         "City": "Boston, MA",
-        "2019 Crime": 6,
-        "2020 Crime": 14,
+        "2019 Anti-Asian Hate Crimes": 6,
+        "2020 Anti-Asian Hate Crimes": 14,
         "ROC": 133
     },
     {
         "City": "Cleveland, OH",
-        "2019 Crime": 2,
-        "2020 Crime": 6,
+        "2019 Anti-Asian Hate Crimes": 2,
+        "2020 Anti-Asian Hate Crimes": 6,
         "ROC": 200
     }
 ]
