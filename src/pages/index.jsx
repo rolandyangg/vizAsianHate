@@ -1,14 +1,17 @@
 /* eslint-disable no-unused-vars */
+import { Box, Text, Flex, VStack, Divider } from '@chakra-ui/react';
+import React from 'react';
+import Container from '../components/layout/container';
 import {
-  Box,
-  Text,
-  Flex,
-  VStack,
-  Divider
-} from "@chakra-ui/react"
-import React from "react";
-import Container from "../components/layout/container"
-import { BubbleGraph, PoliticsGraph, MainGraph, Mapbox, LiveTwitter, Timeline, BarGraph, Hero } from "../components/index";
+	BubbleGraph,
+	PoliticsGraph,
+	MainGraph,
+	Mapbox,
+	LiveTwitter,
+	Timeline,
+	BarGraph,
+	Hero,
+} from '../components/index';
 
 export default function Home() {
  return (
