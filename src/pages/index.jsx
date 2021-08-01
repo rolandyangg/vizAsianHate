@@ -30,7 +30,7 @@ export default function Home() {
             <LiveTwitter/>
           </Box>
             <Divider colorScheme="white" my={20}/>
-          <Flex flexWrap="wrap">
+          <Flex align="center" justify="center" flexWrap="noWrap">
             <MainGraph/>
             <BarGraph/>
           </Flex>

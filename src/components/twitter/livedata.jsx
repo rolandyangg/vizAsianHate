@@ -141,7 +141,7 @@ export default function LiveTwitter() {
 					<TagCloud minSize={20} maxSize={45} tags={frequencies[keywords.indexOf(activeKey)]}/>
 					{renderPieChart()}
 				</Flex>
-					<Select onChange={(e) => setActiveKey(e.currentTarget.value)}>
+					<Select fontSize={20} color="gray" onChange={(e) => setActiveKey(e.currentTarget.value)} maxW="600px">
 						{keywords.map((word, i) => {
 							return (<>
 								<option value={word}>{word}</option>
