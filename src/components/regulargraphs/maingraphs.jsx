@@ -33,9 +33,9 @@ export default function MainGraph() {
 		<Tooltip />
 		<Headers text="hello"/>
 		<Legend verticalAlign="top" height={36}/>
-		<ReferenceLine yAxisId="left" x="March 2020" stroke="yellow" label={'Lockdown Mandate Issued'} />
-		<Line yAxisId="left" type="monotone" dataKey="Anti-Asian Hate Crimes" name="California Asian Hate Crimes" stroke="#8884d8" activeDot={{ r: 8 }} />
-		<Line yAxisId="right" type="monotone" dataKey="California COVID Cases" stroke="#82ca9d" activeDot={{ r: 8 }} />
+		<ReferenceLine yAxisId="left" x="March 2020" stroke="red" label={'Lockdown Mandate Issued'} />
+		<Line yAxisId="left" type="monotone" dataKey="Anti-Asian Hate Crimes" name="California Asian Hate Crimes" stroke="#FFAA33" activeDot={{ r: 8 }} />
+		<Line yAxisId="right" type="monotone" dataKey="California COVID Cases" stroke="#E4D00A" activeDot={{ r: 8 }} />
 	</LineChart>
 	</Box>
 	</>);

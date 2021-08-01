@@ -34,7 +34,7 @@ export default function BarGraph() {
           <Tooltip />
           <Legend verticalAlign="top" height={36}/>
           <Bar dataKey="2019 Anti-Asian Hate Crimes" fill="#E49B0F" />
-          <Bar dataKey="2020 Anti-Asian Hate Crimes" fill="#FCF55F" />
+          <Bar dataKey="2020 Anti-Asian Hate Crimes" fill="#E4D00A" />
         </BarChart>
         {/* <BarChart
           width={700}
