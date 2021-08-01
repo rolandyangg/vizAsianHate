@@ -7,7 +7,7 @@ import {
   Legend,
   BarChart, Bar, 
 } from 'recharts';
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import anti from './antiasian_bar'
 
 export default function BarGraph() {
