@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Text, Heading, Flex } from "@chakra-ui/react"
 import {
 	BarChart,
 	Bar,
@@ -17,11 +16,11 @@ import PoliticsTweetData from "./asianhatetweetdata"
 
 export default function PoliticsGraph() {
 	return (
-		<Box>
+		<Flex align="center" justify="center">
 			<BarChart
 			layout="vertical"
-			width={800}
-			height={700}
+			width={700}
+			height={450}
 			data={PoliticsTweetData}
 			margin={{
 				top: 20,
@@ -30,14 +29,17 @@ export default function PoliticsGraph() {
 				bottom: 5
 			}}
 			>
-			<CartesianGrid stroke="#ccc" strokeDasharray="3 3" />
-			<XAxis dataKey="# of Tweets" type="number"/>
-			<YAxis dataKey="Category" type="category" scale="band"/>
-			<Tooltip />
-			<Legend />
-			<Bar dataKey="Democrats" stackId="a" fill="#E49B0F" />
-			<Bar dataKey="Republicans" stackId="a" fill="#E4D00A" />
+				<CartesianGrid stroke="#ccc" strokeDasharray="3 3" />
+				<XAxis dataKey="# of Tweets" type="number"/>
+				<YAxis dataKey="Category" type="category" scale="band"/>
+				<Tooltip />
+				<Legend />
+				<Bar dataKey="Democrats" stackId="a" fill="#E49B0F" />
+				<Bar dataKey="Republicans" stackId="a" fill="#E4D00A" />
 			</BarChart>
-		</Box>
+			<Heading>
+				Test
+			</Heading>
+		</Flex>
     );
 }
