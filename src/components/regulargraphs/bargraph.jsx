@@ -65,7 +65,7 @@ export default function BarGraph() {
             <Bar yAxisId="right" dataKey="ROC" fill="#ffc658" />
           </BarChart> */}
           <VStack>
-            <Heading>Anti-Asian Hate Crimes have increased by 146% between 2020 and 2021</Heading>
+            <Heading>Anti-Asian Hate Crimes have increased by 146% between 2019 and 2020</Heading>
             <Text>This bar graph shows the number of anti-Asian hate crimes in 12 cities in America and Canada. From 2019 to 2020, hate crimes increased in all cities, and this also shows how racism and Asian hate is also a pressing international issue. The false blaming many people placed on Asians has negatively impacted the lives of many Asians.</Text>
           </VStack>
       </HStack>
