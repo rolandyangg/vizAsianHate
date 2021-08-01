@@ -2,8 +2,8 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
     fonts: {
-        heading: "Roboto-Bold",
-        body: "Roboto-Regular"
+        heading: "Inter-Bold",
+        body: "Inter-Medium"
     },
     styles: {
         global: () => ({
@@ -14,10 +14,10 @@ const theme = extendTheme({
             body: {
                 padding: 0,
                 margin: 0,
-                fontFamily: "Roboto, Montserrat-Regular, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+                fontFamily: "Inter-Medium",
                 textAlign: "center",
                 background: "#0c0c0c", //linear-gradient(90deg, rgb(145,141,240) 0%, #8192f0 100%)
-                color: "black",
+                color: "white",
             },
             a: {
                 color: "inherit",
@@ -36,12 +36,12 @@ const theme = extendTheme({
                 color: "#F2D852",
             },
             "@font-face": [{
-                    fontFamily: "Roboto-Bold",
-                    src: "url('/fonts/Roboto-Bold.ttf')",
+                    fontFamily: "Inter-Bold",
+                    src: "url('/fonts/Inter-Bold.ttf')",
                 },
                 {
-                    fontFamily: "Roboto-Regular",
-                    src: "url('/fonts/Roboto-Regular.ttf')",
+                    fontFamily: "Inter-Medium",
+                    src: "url('/fonts/Inter-Medium.ttf')",
                 },
             ],
         }),
