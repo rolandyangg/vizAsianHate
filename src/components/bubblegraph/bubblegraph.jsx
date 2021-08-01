@@ -44,17 +44,17 @@ function Bubble(props) {
 						<ModalOverlay />
 						<ModalContent bgColor="white" align="center">
 							<ModalBody p="25px">
-								<Box>
+								<Box color="black">
 									<Text fontWeight="bold">State: {props.State}</Text>
 									<Text fontWeight="bold">City: {props.City}</Text>
 									<Text fontWeight="bold">Type: {props.Type}</Text>
-									<Divider py={2}/>
+									<Divider py={2} />
 									<Text py={2}>"{props.Report}"</Text>
 									<Text fontSize={10}>Source: <NextLink target="_blank" href={props.Source} isExternal>{props.Source}</NextLink></Text>
 								</Box>
 							</ModalBody>
 							<ModalFooter>
-								<Button size="sm" onClick={onClose}>
+								<Button colorScheme="yellow" size="sm" onClick={onClose}>
 									Close
 								</Button>
 							</ModalFooter>
@@ -132,7 +132,7 @@ export default function BubbleGraph() {
 						{possibleTypes.map((type, i) => {
 							return (
 								<>
-									<Checkbox isChecked={checkedTypes[i]} colorScheme="yellow" m={2} onChange={(e) => {
+									<Checkbox color="black" isChecked={checkedTypes[i]} colorScheme="yellow" m={2} onChange={(e) => {
 										let temp = checkedTypes.slice(); 
 										temp[i] = e.target.checked;
 										setCheckedTypes(temp);
@@ -147,7 +147,7 @@ export default function BubbleGraph() {
 						{possibleStates.map((state, i) => {
 							return (
 								<>
-									<Checkbox isChecked={checkedStates[i]} colorScheme="yellow" m={2} onChange={(e) => {
+									<Checkbox color="black" isChecked={checkedStates[i]} colorScheme="yellow" m={2} onChange={(e) => {
 										let temp = checkedStates.slice(); 
 										temp[i] = e.target.checked;
 										setCheckedStates(temp);
