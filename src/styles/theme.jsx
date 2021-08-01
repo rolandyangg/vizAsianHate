@@ -35,6 +35,9 @@ const theme = extendTheme({
             h3: {
                 color: "#F2D852",
             },
+            button: {
+                color: "black"
+            },
             "@font-face": [{
                     fontFamily: "Inter-Bold",
                     src: "url('/fonts/Inter-Bold.ttf')",

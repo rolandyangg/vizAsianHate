@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import ReactMapboxGl, { Marker, ZoomControl } from 'react-mapbox-gl';
 import {
-	Flex,
 	Tabs,
 	TabList,
 	Tab,
@@ -37,16 +36,16 @@ const Mapbox = () => {
 
 	return (
 		<Tabs onChange={(index) => setYear(indexToYear[index])}>
-			<TabList height="5vh">
-				<Tab>All Years</Tab>
-				<Tab>2021</Tab>
-				<Tab>2020</Tab>
-				<Tab>2019</Tab>
-				<Tab>2018</Tab>
-				<Tab>2017</Tab>
-				<Tab>2016</Tab>
-				<Tab>2015</Tab>
-				<Tab>2006</Tab>
+			<TabList height="5vh" color="white">
+				<Tab color="white">All Years</Tab>
+				<Tab color="white">2021</Tab>
+				<Tab color="white">2020</Tab>
+				<Tab color="white">2019</Tab>
+				<Tab color="white">2018</Tab>
+				<Tab color="white">2017</Tab>
+				<Tab color="white">2016</Tab>
+				<Tab color="white">2015</Tab>
+				<Tab color="white">2006</Tab>
 			</TabList>
 			<Map
 				style="mapbox://styles/mapbox/dark-v10"
@@ -91,14 +90,14 @@ const Mapbox = () => {
 			<Modal isOpen={isOpen} onClose={onClose}>
 				<ModalOverlay />
 				<ModalContent>
-					<ModalHeader>{place}</ModalHeader>
+					<ModalHeader color="black">{place}</ModalHeader>
 					<ModalCloseButton />
 					<ModalBody>
-						<Text>{text}</Text>
+						<Text color="black">{text}</Text>
 					</ModalBody>
 					<ModalFooter>
 						<Link href={source} isExternal>
-							<Button colorScheme="blue" mr={3}>
+							<Button color="black" colorScheme="yellow" mr={3}>
 								Read More
 							</Button>
 						</Link>

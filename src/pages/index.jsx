@@ -8,10 +8,12 @@ import {
 } from "@chakra-ui/react"
 import React from "react";
 import Container from "../components/layout/container"
-import { BubbleGraph, PoliticsGraph, MainGraph, Mapbox, LiveTwitter, Timeline, BarGraph } from "../components/index";
+import { BubbleGraph, PoliticsGraph, MainGraph, Mapbox, LiveTwitter, Timeline, BarGraph, Hero } from "../components/index";
 
 export default function Home() {
  return (
+   <>
+    <Hero />
     <Container py={20} bgColor="black" align="center" justify="center">
       <VStack maxW="1280px">
         <Flex justify="center" flexWrap="wrap">
@@ -37,5 +39,6 @@ export default function Home() {
         </Flex>
       </VStack>
     </Container>
+    </>
   )
 }
