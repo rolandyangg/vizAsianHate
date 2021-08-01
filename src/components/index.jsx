@@ -4,6 +4,6 @@ import MainGraph from "./regulargraphs/maingraphs"
 import PoliticsGraph from "./twitter/politicsgraph"
 import LiveTwitter from "./twitter/livedata"
 import Hero from "./hero"
-import Mapbox from "./mapbox"
+import Mapbox from "./mapbox/mapbox"
 
 export { AdditionGraph, BubbleGraph, MainGraph, PoliticsGraph, LiveTwitter, Hero, Mapbox }
