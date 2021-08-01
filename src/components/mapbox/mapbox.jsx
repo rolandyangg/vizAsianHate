@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import ReactMapboxGl, { Marker } from 'react-mapbox-gl';
 import {
+	Tabs,
+	TabList,
+	TabPanels,
+	Tab,
+	TabPanel,
 	Link,
 	Text,
 	Button,
@@ -29,8 +34,21 @@ const Mapbox = () => {
 	const [source, setSource] = useState('');
 
 	return (
-		<>
-			<Map
+		<Tabs>
+			<TabList>
+				<Tab index={2021}>2021</Tab>
+				<Tab index={2020}>2020</Tab>
+				<Tab index={2019}>2019</Tab>
+				<Tab index={2018}>2018</Tab>
+				<Tab index={2017}>2017</Tab>
+				<Tab index={2016}>2016</Tab>
+				<Tab index={2015}>2015</Tab>
+				<Tab index={2006}>2006</Tab>
+				<Tab index={0}>All Years</Tab>
+			</TabList>
+			<TabPanels>
+				<TabPanel>
+				<Map
 				style="mapbox://styles/mapbox/dark-v10"
 				containerStyle={{
 					height: '100vh',
@@ -39,26 +57,34 @@ const Mapbox = () => {
 				center={[-98.5795, 39.8283]}
 				zoom={[4.2]}
 			>
-				{aapiHateCrimes.map((hateCrime, i) => {
-					return (
-						<>
+				{aapiHateCrimes
+					.filter((feature) => feature.properties.year === 2021)
+					.map((feature, i) => {
+						return (
 							<Marker
 								key={i}
-								coordinates={hateCrime.geometry.coordinates}
+								coordinates={feature.geometry.coordinates}
 								anchor="bottom"
 								onClick={() => {
-									setPlace(hateCrime.properties.place_name);
-									setText(hateCrime.properties.text);
-									setSource(hateCrime.properties.source);
+									setPlace(feature.properties.place_name);
+									setText(feature.properties.text);
+									setSource(feature.properties.source);
 									onOpen();
 								}}
 							>
-								<Image objectFit="cover" alt="Marker" src="images/marker.png" />
+								{/* <Circle size="15px" bg="blue" color="#00FFFF" borderColor="white" borderWidth="1px" zIndex={0}/> */}
+								<Image
+									width="15px"
+									objectFit="cover"
+									alt="Marker"
+									src="images/marker.png"
+								/>
 							</Marker>
-						</>
-					);
-				})}
+						);
+					})}
 			</Map>
+				</TabPanel>
+			</TabPanels>
 			<Modal isOpen={isOpen} onClose={onClose}>
 				<ModalOverlay />
 				<ModalContent>
@@ -76,7 +102,7 @@ const Mapbox = () => {
 					</ModalFooter>
 				</ModalContent>
 			</Modal>
-		</>
+		</Tabs>
 	);
 };
 
