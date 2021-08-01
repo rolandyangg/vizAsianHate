@@ -14,8 +14,8 @@ export default function BarGraph() {
 	return (<>
     <Box>
     <BarChart
-          width={800}
-          height={700}
+          width={1200}
+          height={500}
           data={anti}
           margin={{
             top: 5,
@@ -33,8 +33,8 @@ export default function BarGraph() {
           <YAxis />
           <Tooltip />
           <Legend verticalAlign="top" height={36}/>
-          <Bar dataKey="2019 Anti-Asian Hate Crimes" fill="#8884d8" />
-          <Bar dataKey="2020 Anti-Asian Hate Crimes" fill="#82ca9d" />
+          <Bar dataKey="2019 Anti-Asian Hate Crimes" fill="#E49B0F" />
+          <Bar dataKey="2020 Anti-Asian Hate Crimes" fill="#FCF55F" />
         </BarChart>
         {/* <BarChart
           width={700}
