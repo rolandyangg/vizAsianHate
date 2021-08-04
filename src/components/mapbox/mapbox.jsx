@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import ReactMapboxGl, { Marker, ZoomControl } from 'react-mapbox-gl';
+import { useState } from "react";
+import ReactMapboxGl, { Marker, ZoomControl } from "react-mapbox-gl";
 import {
 	Tabs,
 	TabList,
@@ -16,21 +16,21 @@ import {
 	ModalBody,
 	ModalCloseButton,
 	useDisclosure,
-	Box
-} from '@chakra-ui/react';
-import { aapiHateCrimes } from './aapi-hate-crimes';
-import 'mapbox-gl/dist/mapbox-gl.css';
+	Box,
+} from "@chakra-ui/react";
+import { aapiHateCrimes } from "./aapi-hate-crimes";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 const Map = ReactMapboxGl({
 	accessToken:
-		'pk.eyJ1IjoiYWhhYW5saW1heWUiLCJhIjoiY2tycHF5eXdlMmI3NDJub2JiMWx2NGp4aiJ9.eGODl97VCEfsezbT7_ZNjA',
+		"pk.eyJ1IjoiYWhhYW5saW1heWUiLCJhIjoiY2tycHF5eXdlMmI3NDJub2JiMWx2NGp4aiJ9.eGODl97VCEfsezbT7_ZNjA",
 });
 
 const Mapbox = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const [place, setPlace] = useState('');
-	const [text, setText] = useState('');
-	const [source, setSource] = useState('');
+	const [place, setPlace] = useState("");
+	const [text, setText] = useState("");
+	const [source, setSource] = useState("");
 	const [year, setYear] = useState(0);
 
 	const indexToYear = [0, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2006];
@@ -52,8 +52,8 @@ const Mapbox = () => {
 				<Map
 					style="mapbox://styles/mapbox/dark-v10"
 					containerStyle={{
-						height: '90vh',
-						width: '80vw',
+						height: "90vh",
+						width: "80vw",
 					}}
 					center={[-98.5795, 39.8283]}
 					zoom={[4.2]}
@@ -63,7 +63,10 @@ const Mapbox = () => {
 					]}
 				>
 					{aapiHateCrimes
-						.filter((feature) => feature.properties.year === year || year === 0)
+						.filter(
+							(feature) =>
+								feature.properties.year === year || year === 0
+						)
 						.map((feature, i) => {
 							return (
 								<Marker
@@ -99,7 +102,11 @@ const Mapbox = () => {
 						</ModalBody>
 						<ModalFooter>
 							<Link href={source} isExternal>
-								<Button color="black" colorScheme="yellow" mr={3}>
+								<Button
+									color="black"
+									colorScheme="yellow"
+									mr={3}
+								>
 									Read More
 								</Button>
 							</Link>
@@ -107,13 +114,15 @@ const Mapbox = () => {
 					</ModalContent>
 				</Modal>
 			</Tabs>
-			<Text>This interactive map shows location markers for reported Asian
-									Hate attacks in the past 15 years. You can choose which year you
-									want to view and can also view short descriptions and news
-									articles on the specific hate crimes. The purpose of this map is
-									to give insight into how drastically Asian Hate crimes have
-									increased over the past few years and a broader understanding of
-									how widespread Asian hate crimes are around the United States.</Text>
+			<Text>
+				This interactive map shows location markers for reported Asian
+				Hate attacks in the past 15 years. You can choose which year you
+				want to view and can also view short descriptions and news
+				articles on the specific hate crimes. The purpose of this map is
+				to give insight into how drastically Asian Hate crimes have
+				increased over the past few years and a broader understanding of
+				how widespread Asian hate crimes are around the United States.
+			</Text>
 		</Box>
 	);
 };
