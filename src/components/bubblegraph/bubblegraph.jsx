@@ -14,6 +14,7 @@ import {
 	useDisclosure,
 	Divider,
 	Tooltip,
+	Heading
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { testimonies, stateColors, typeColors } from "./aapitestimonydata";
@@ -157,6 +158,9 @@ export default function BubbleGraph() {
 	return (
 		<>
 			<Box>
+				<Heading color="white">
+					Anti-Asian Hate Crime Victim Stories Categorized by Type and State
+				</Heading>
 				<CheckboxGroup>
 					<Flex
 						bgColor="white"

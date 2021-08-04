@@ -16,7 +16,8 @@ import {
 	ModalBody,
 	ModalCloseButton,
 	useDisclosure,
-	Box,
+	Heading,
+	VStack
 } from "@chakra-ui/react";
 import { aapiHateCrimes } from "./aapi-hate-crimes";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -36,7 +37,10 @@ const Mapbox = () => {
 	const indexToYear = [0, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2006];
 
 	return (
-		<Box>
+		<VStack spacing={3}>
+			<Heading color="white">
+				Interactive 3D Map of Reported Anti-Asian Hate Crime Incidents Over The Years
+			</Heading>
 			<Tabs onChange={(index) => setYear(indexToYear[index])}>
 				<TabList height="5vh" color="white">
 					<Tab color="white">All Years</Tab>
@@ -52,7 +56,7 @@ const Mapbox = () => {
 				<Map
 					style="mapbox://styles/mapbox/dark-v10"
 					containerStyle={{
-						height: "90vh",
+						height: "70vh",
 						width: "80vw",
 					}}
 					center={[-98.5795, 39.8283]}
@@ -123,7 +127,7 @@ const Mapbox = () => {
 				increased over the past few years and a broader understanding of
 				how widespread Asian hate crimes are around the United States.
 			</Text>
-		</Box>
+		</VStack>
 	);
 };
 

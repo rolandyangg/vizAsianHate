@@ -17,7 +17,7 @@ export default function MainGraph() {
 		<>
 			<VStack>
 				<Heading color="white">
-					California Asian Hate Crimes and COVID-19 Cases Over Time
+					California Anti-Asian Hate Crimes and COVID-19 Cases Over Time
 				</Heading>
 				<LineChart
 					width={1200}

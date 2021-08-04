@@ -28,10 +28,10 @@ export default function Home() {
 							<BubbleGraph />
 						</Box>
 						<Divider my={20} />
-						<Box justify="center" align="center" maxW="1280px">
+						<Flex flexWrap="wrap" justify="center" align="center" maxW="1280px">
 							<PoliticsGraph />
 							<LiveTwitter />
-						</Box>
+						</Flex>
 						<Divider colorScheme="white" my={20} />
 						<Flex align="center" justify="center" flexWrap="wrap">
 							<Box my={10}>

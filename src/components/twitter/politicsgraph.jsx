@@ -14,27 +14,30 @@ import PoliticsTweetData from "./asianhatetweetdata";
 export default function PoliticsGraph() {
 	return (
 		<Flex align="center" justify="center">
-			<BarChart
-				layout="vertical"
-				width={600}
-				height={450}
-				data={PoliticsTweetData}
-				margin={{
-					top: 20,
-					right: 30,
-					left: 20,
-					bottom: 5,
-				}}
-				mx={15}
-			>
-				<CartesianGrid stroke="#ccc" strokeDasharray="3 3" />
-				<XAxis dataKey="# of Tweets" type="number" />
-				<YAxis dataKey="Category" type="category" scale="band" />
-				<Tooltip />
-				<Legend />
-				<Bar dataKey="Democrats" stackId="a" fill="#E49B0F" />
-				<Bar dataKey="Republicans" stackId="a" fill="#E4D00A" />
-			</BarChart>
+			<VStack>
+				<Heading color="white" fontSize={33}>AAPI Related Tweets From Politicians First 8 Months After Quarantine Categorized</Heading>
+				<BarChart
+					layout="vertical"
+					width={700}
+					height={450}
+					data={PoliticsTweetData}
+					margin={{
+						top: 20,
+						right: 30,
+						left: 20,
+						bottom: 5,
+					}}
+					mx={15}
+				>
+					<CartesianGrid stroke="#ccc" strokeDasharray="3 3" />
+					<XAxis dataKey="# of Tweets" type="number" />
+					<YAxis dataKey="Category" type="category" scale="band" />
+					<Tooltip />
+					<Legend />
+					<Bar dataKey="Democrats" stackId="a" fill="#E49B0F" />
+					<Bar dataKey="Republicans" stackId="a" fill="#E4D00A" />
+				</BarChart>
+			</VStack>
 			<VStack mx={10}>
 				<Heading fontSize={30}>
 					"Tweets deploying stigmatizing rhetoric were retweeted a
